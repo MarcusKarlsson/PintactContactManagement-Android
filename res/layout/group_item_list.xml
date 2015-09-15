@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+   	android:background="@anim/background_listview" >
+
+    <RelativeLayout 
+        android:id="@+id/gil_contents_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"   
+	   	android:paddingTop="@dimen/im_padding_10dp"
+	   	android:paddingBottom="@dimen/im_padding_10dp" >
+    
+	    <TextView  style="@style/CSLText"
+	        android:id="@+id/gil_name"
+	        android:layout_width="wrap_content"
+	        android:paddingLeft="@dimen/im_padding_20dp"
+	        android:paddingStart="@dimen/im_padding_20dp"
+	        android:layout_marginRight="90dp"
+	        android:layout_marginEnd="90dp"
+	        android:text="@string/ab_label"
+	        android:textSize="@dimen/csl_big"
+	        android:textStyle="normal"
+	        android:singleLine="true"
+	        android:ellipsize="end" />
+	
+	    <TextView style="@style/CSLText"
+	        android:layout_below="@+id/gil_name"
+	        android:text="@string/gm_pin_hint"
+	        android:textSize="@dimen/csl_small"
+	        android:textColor="@color/PINTACT_BLUE_COLOR"
+	        android:paddingLeft="@dimen/im_padding_20dp"
+	        android:paddingStart="@dimen/im_padding_20dp"
+	        android:id="@+id/gil_title"
+	        />
+	    
+	    <!-- member icons and number | expiry date icon -->
+	    <ImageView 
+	        android:id="@+id/gil_arrow"
+	    	android:layout_width="20dp"
+	    	android:layout_height="wrap_content"
+	        android:src="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentEnd="true"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+	        android:layout_marginEnd="@dimen/im_padding_20dp"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/dummy"
+			/>
+	
+	    <ImageView
+	        android:id="@+id/gil_editable"
+	        android:layout_width="30dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+	        android:layout_marginEnd="@dimen/im_padding_20dp"
+	        android:layout_toLeftOf="@id/gil_arrow"
+	        android:layout_toStartOf="@id/gil_arrow"
+	        android:src="@drawable/prof_row5"
+			android:contentDescription="@string/dummy"
+			/>
+	    
+    </RelativeLayout>
+    
+    <TextView style="@style/PCNSep"
+        android:id="@+id/gil_sep"
+        android:layout_below="@+id/gil_contents_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/im_padding_20dp"
+        android:layout_marginStart="@dimen/im_padding_20dp"
+        />
+	
+</RelativeLayout>

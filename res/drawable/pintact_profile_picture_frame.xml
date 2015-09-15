@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/PINTACT_TRANSPARENT_COLOR" />
+    <padding android:left="@dimen/PINTACT_PROFILE_PICTURE_PADDING"
+        android:top="@dimen/PINTACT_PROFILE_PICTURE_PADDING"
+        android:right="@dimen/PINTACT_PROFILE_PICTURE_PADDING"
+        android:bottom="@dimen/PINTACT_PROFILE_PICTURE_PADDING" />
+    <corners android:radius="@dimen/PINTACT_PROFILE_PICTURE_PADDING" />
+    <stroke android:width="@dimen/PINTACT_PROFILE_PICTURE_PADDING" android:color="@color/PINTACT_VIEW_BG_COLOR" />
+</shape>

@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SettingMainActivity" >
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.3" />
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.4"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_logo" />
+
+            <View
+                android:id="@+id/View2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailPassLayout"
+        android:layout_width="@dimen/PINTACT_BIG_BUTTON_WIDTH"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pintact_round_layout_login_edittext_bg"
+        android:orientation="vertical" >
+
+        <com.pinplanet.pintact.utility.EditTextTypeFace
+            android:id="@+id/userText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="@string/login_pin_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL" 
+			android:textCursorDrawable="@null"
+            app:FontStyles="normal">
+            <requestFocus />
+        </com.pinplanet.pintact.utility.EditTextTypeFace>
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/PINTACT_LINE_HEIGHT"
+            android:background="@color/PINTACT_LIGHTGRAY_ALPHA_COLOR" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.pinplanet.pintact.utility.EditTextTypeFace
+                android:id="@+id/passText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="@string/login_pwd"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/PINTACT_WHITE_COLOR"
+                android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL" 
+                android:textCursorDrawable="@null"
+                app:FontStyles="normal"
+                />
+
+            <ImageView
+                android:id="@+id/imageViewEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/passText"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/passText"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="onPassVisible"
+                android:src="@drawable/eye" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!-- android:onClick="onLogin" -->
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/buttonLogin"
+        style="@style/BigButtonStyle"
+        android:layout_below="@id/emailPassLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/pintact_round_white_button_selector"
+        android:text="@string/login_login"
+        android:textColor="@color/PINTACT_BLUE_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_LARGE"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:FontStyles="normal|bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutForgot">
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/TextViewForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_forgot_pwd"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_SMALL"
+            app:FontStyles="bold|italic"
+            android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/PINTACT_LINE_HEIGHT"
+            android:layout_marginTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+            android:background="@color/PINTACT_WHITE_COLOR" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="onRegisterClicked"
+            android:clickable="true">
+
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_no_pin_yet"
+                android:textColor="@color/PINTACT_WHITE_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="light|italic"
+                android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_register"
+                android:textColor="@color/PINTACT_WHITE_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="bold"
+                android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/PINTACT_LINE_HEIGHT"
+            android:background="@color/PINTACT_WHITE_COLOR" />
+
+    </LinearLayout>
+
+</RelativeLayout>

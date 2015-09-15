@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- #### general new colors, added by Dennis #### -->
+    
+    <!-- colors from iOS -->
+    <color name="PINTACT_RED_COLOR">#FF0000</color>
+    <color name="PINTACT_WHITE_COLOR">#FFFFFF</color>
+    <color name="PINTACT_BLACK_COLOR">#000000</color>
+    <color name="PINTACT_BLUE_COLOR">#00ADD9</color>
+    <color name="PINTACT_LIGHT_BLUE_COLOR">#3300ADD9</color>
+    <color name="PINTACT_GREEN_COLOR">#80BD01</color>
+    <color name="PINTACT_ORANGE_COLOR">#FD4F00</color>
+    <color name="PINTACT_LIGHTGRAY_COLOR">#F0F0F0</color>
+    <!-- f8fdfe -->
+    <color name="PINTACT_MEDIUMGRAY_COLOR">#999999</color>
+    <color name="PINTACT_DARKGRAY_COLOR">#040404</color>
+    <color name="PINTACT_GRAY_COLOR">#CCCCCC</color>
+    
+    <!-- special colors with alpha -->
+    <color name="PINTACT_BLACK_ALPHA_COLOR">#88000000</color>
+    <color name="PINTACT_LIGHTGRAY_ALPHA_COLOR">#88F0F0F0</color>
+    <color name="PINTACT_TRANSPARENT_COLOR">#00000000</color>
+    <color name="PINTACT_BLUE_ALPHA_COLOR">#5000ADD9</color>
+    <color name="PINTACT_ORANGE_ALPHA_COLOR">#50FD4F00</color>
+    
+    <!-- helper to remember colors -->
+    <color name="PINTACT_TEXT_HINT_COLOR">@color/PINTACT_GRAY_COLOR</color>
+    <color name="PINTACT_TEXT_LEFT_DECK_COLOR">@color/PINTACT_WHITE_COLOR</color>
+    <color name="PINTACT_TEXT_LABEL_COLOR">@color/PINTACT_MEDIUMGRAY_COLOR</color>
+    <color name="PINTACT_TEXT_COLOR">@color/PINTACT_DARKGRAY_COLOR</color>
+
+    <color name="PINTACT_LINE_GRAY_COLOR">@color/PINTACT_GRAY_COLOR</color>
+    <color name="PINTACT_LEFT_DECK_SEPERATOR_COLOR">@color/PINTACT_DARKGRAY_COLOR</color>
+    <color name="PINTACT_VIEW_BG_COLOR">@color/PINTACT_LIGHTGRAY_COLOR</color>
+    
+    <color name="PINTACT_LEFT_DECK_BG_COLOR">#1A1A1A</color>
+
+    <!-- #### general new colors end #### -->
+    
+    
+    <!--  left deck colors -->
+    <color name="left_deck_bg">#1A1A1A</color>
+    <color name="left_deck_seperator">#050505</color>
+    
+    
+    <color name="red">#FF0000</color>
+    <color name="blue">#0E7EA0</color>
+
+    
+    <!--  group pin  -->
+    <color name="gp_color">#808080</color>
+    
+    <!--  profile  -->
+    <color name="pt_regular">#AAAAAA</color>
+    
+    <!--  settings  -->
+    <color name="set_sub_item">#666666</color>
+    
+    <!-- action bar -->
+    <color name="action_bar_fg">#FFFFFF</color>
+
+    <!-- login page -->
+    <color name="login_congrats_bg">#E6E6E6</color>
+    <color name="login_hint_bg">#29977A</color>
+    <color name="login_hint_fg">#93CABC</color>
+    <color name="login_btn_bg">#CCEEE5</color>
+    <color name="login_btn_fg">#2DB28F</color>
+    <color name="login_forgot">#E0F4EE</color>
+    <color name="login_how_work">#1F7961</color>
+    <color name="login_register">#F4FBF9</color>
+    <color name="lr_err_bg">#FCEAC5</color>
+    <color name="lr_err_fg">#776A4F</color>
+    <color name="lr_hint_bg">#CCCCCC</color>
+    <color name="lr_hint_fg">#E0E0E0</color>
+    <color name="lr_next_color">#40A68D</color>
+    <color name="lr_facebook">#4569AA</color>
+    <color name="lr_twitter">#39B2E6</color>
+    <color name="lf_text">#999999</color>
+    <color name="lf_send">#239B7E</color>
+    <color name="lrp_err_fg">#BF3D3D</color>
+    <color name="ld_search_bg">#101010</color>
+    
+    <!--  profile detail page -->
+    <color name="profile_sep">#E9E9E9</color>
+    <color name="profile_note">#35B593</color>
+    <color name="profile_title">#B1B1B7</color>
+    <color name="profile_add">#29A57C</color>
+    
+    
+
+
+    
+</resources>

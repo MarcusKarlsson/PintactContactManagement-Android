@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/login_congrats_bg" >
+    
+    <RelativeLayout
+        android:id="@+id/im_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PINTACT_WHITE_COLOR"
+        android:paddingLeft="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingRight="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:paddingBottom="@dimen/PINTACT_MARGIN_VIEW_VERTICAL" >
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/im_select_all_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PINTACT_TEXT_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_LARGE"
+            android:textStyle="bold"
+            android:text="@string/im_all"
+            android:lines="1"
+            android:maxLines="1"
+            app:FontStyles="bold"
+            android:background="@null"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/im_margin_40dp"
+            android:layout_marginStart="@dimen/im_margin_40dp"
+            android:layout_toLeftOf="@+id/im_title"
+            android:layout_toStartOf="@+id/im_title"
+            android:layout_centerVertical="true" />
+
+	      
+	      <ImageView
+              android:layout_alignParentRight="true"
+	          android:layout_alignParentEnd="true"
+              android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+              android:layout_marginEnd="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+	          android:clickable="true"
+	          android:layout_height="25dp"
+	          android:layout_width="25dp"
+              android:layout_gravity="center"
+              android:src="@drawable/circle"
+	          android:id="@+id/im_title"
+              android:layout_centerVertical="true" />
+	      
+     </RelativeLayout>
+     
+    <TextView style="@style/IMTop"
+        android:layout_below="@id/im_header"
+        android:id="@+id/im_top"
+        />
+    
+        <!-- android:dividerHeight="0dp" -->
+		<!--  android:divider="@null" -->
+    <ListView 
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PINTACT_WHITE_COLOR"
+        android:choiceMode="multipleChoice"
+        android:id="@+id/im_list"
+        android:divider="@drawable/border_invite_contact_sep"
+        android:layout_alignParentBottom="true"
+   	 	android:layout_below="@+id/im_top" >
+
+        
+    </ListView>
+    
+</RelativeLayout>

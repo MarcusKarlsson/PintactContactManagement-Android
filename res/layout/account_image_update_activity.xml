@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_image_upload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PINTACT_VIEW_BG_COLOR" >
+
+    <!--<com.pinplanet.pintact.utility.TextViewTypeFace-->
+        <!--android:id="@+id/textViewInfo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"-->
+        <!--android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"-->
+        <!--android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"-->
+        <!--android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"-->
+        <!--android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"-->
+        <!--android:textSize="@dimen/TEXT_SIZE_SMALL"-->
+        <!--android:textStyle="bold"-->
+        <!--app:FontStyles="normal|bold"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/layoutItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:padding="5dp"
+            android:gravity="center">-->
+
+            <FrameLayout
+                android:layout_width="@dimen/PINTACT_REGISTER_ADD_IMAGE_SIZE"
+                android:layout_height="@dimen/PINTACT_REGISTER_ADD_IMAGE_SIZE"
+                android:onClick="changeImage"
+                android:clickable="true">
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/REGISTER_TAP_ADD_AN_IMAGE"
+                    android:textColor="@color/PINTACT_TEXT_HINT_COLOR"
+                    android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                    app:FontStyles="bold"
+                    android:gravity="center"
+                    android:background="@color/PINTACT_VIEW_BG_COLOR"
+                    android:padding="@dimen/PINTACT_ITEM_PADDING"
+                    android:layout_gravity="center"
+                    />
+
+                <com.pinplanet.pintact.utility.CustomNetworkImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/pcn_image"
+                    android:padding="@dimen/PINTACT_LINE_HEIGHT"
+                    android:src="@null"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pintact_picture_frame_white_bg"
+                />
+
+                </FrameLayout>
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/imageButtonsHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/pcn_image_remove"
+                style="@style/ButtonStyle"
+                android:onClick="removeSearchImage"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:background="@drawable/pintact_round_blue_rect"
+                android:text="@string/REMOVE_IMAGE"
+                app:FontStyles="bold" />
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/buttonChangeImage"
+                style="@style/ButtonStyle"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:background="@drawable/pintact_round_blue_rect"
+                android:text="@string/CHANGE_IMAGE"
+                android:onClick="changeImage"
+                app:FontStyles="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/pintact_white_rect_with_2_lines"
+           android:layout_below="@+id/layoutItems"
+           android:padding="5dp"
+           android:layout_marginTop="50dp"
+           android:gravity="center">
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/imageNextTextView"
+        style="@style/ButtonStyle"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/pintact_round_orange_button_selector"
+        android:text="@string/NEXT"
+        android:onClick="onNext"
+        app:FontStyles="bold"
+        android:layout_centerHorizontal="true"
+        />
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/imageNextTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/NEXT"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_below="@+id/layoutItems"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:clickable="true"-->
+        <!--android:onClick="onNext"/>-->
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/PINTACT_WHITE_COLOR"-->
+        <!-->-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/image_holder"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<com.pintact.utility.CustomNetworkImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/pcn_image_size"-->
+            <!--android:id="@+id/pcn_image"-->
+            <!--android:onClick="createAttachDialog"-->
+            <!--android:src="@drawable/silhouette"-->
+            <!--android:layout_marginLeft="@dimen/profile_side_margin" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+        <!--style="@style/BigBlueButtonStyle"-->
+        <!--android:onClick="createAttachDialog"-->
+        <!--android:text="@string/search_setting_change_image"-->
+        <!--android:id="@+id/pcn_image_change"-->
+        <!--android:layout_margin="10dp"/>-->
+
+    <!--<TextView-->
+        <!--style="@style/BigOrangeButtonStyle"-->
+        <!--android:onClick="removeSearchImage"-->
+        <!--android:text="@string/search_setting_remove_image"-->
+        <!--android:id="@+id/pcn_image_remove"-->
+        <!--android:layout_margin="10dp" />-->
+
+    <!--</LinearLayout>-->
+ <!--</LinearLayout>-->

@@ -1,0 +1,146 @@
+<resources>
+
+    <dimen name="PINTACT_SEPERATOR_HEIGHT">1dp</dimen>
+    <dimen name="PINTACT_LINE_HEIGHT">1px</dimen>
+    <dimen name="PINTACT_ITEM_PADDING">5dp</dimen>
+
+    <dimen name="PINTACT_MARGIN_ITEM_VERTICAL">10dp</dimen>
+    <dimen name="PINTACT_MARGIN_ITEM_HORIZONTAL">10dp</dimen>
+
+    <dimen name="PINTACT_MARGIN_VIEW_VERTICAL">20dp</dimen>
+    <dimen name="PINTACT_MARGIN_VIEW_HORIZONZAL">20dp</dimen>
+    
+    <dimen name="PINTACT_LEFT_DECK_SEPERATOR_HORIZONTAL_MARGIN">20dp</dimen>
+    <dimen name="PINTACT_LEFT_DECK_ITEM_HORIZONTAL_MARGIN">10dp</dimen>
+    <dimen name="PINTACT_LEFT_DECK_ITEM_VERTICAL_MARGIN">15dp</dimen>
+    <dimen name="PINTACT_LEFT_DECK_LEFT_DRAWABLE_PADDING">20dp</dimen>
+
+    <dimen name="PINTACT_LIST_ITEM_THUMBNAIL_SIZE">50dp</dimen>
+    <dimen name="PINTACT_PROFILE_PICTURE_PADDING">5dp</dimen>
+    <dimen name="PINTACT_LIST_PICTURE_PADDING">3dp</dimen>
+
+    <!-- General settings -->
+    <dimen name="TEXT_SIZE_XTRA_LARGE">25sp</dimen>
+    <dimen name="TEXT_SIZE_LARGE">19sp</dimen>
+    <dimen name="TEXT_SIZE_NORMAL">15sp</dimen>
+    <dimen name="TEXT_SIZE_SMALL">11sp</dimen>
+    
+    <!--  General big button settings -->
+    <dimen name="PINTACT_BIG_BUTTON_WIDTH">200dp</dimen>
+    <dimen name="PINTACT_BIG_BUTTON_HEIGHT">36dp</dimen>
+    <dimen name="PINTACT_BIG_BUTTON_PADDING">10dp</dimen>
+
+    <dimen name="PINTACT_REGISTER_ADD_IMAGE_SIZE">220dp</dimen>
+    
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="left_deck_width">340dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="left_deck_list_divider_height">4dp</dimen>
+    <dimen name="image_top_margin">20dp</dimen>
+    <dimen name="image_botton_margin">20dp</dimen>
+    <dimen name="image_left_margin">25dp</dimen>
+    <dimen name="image_right_margin">10dp</dimen>
+    <dimen name="text_top_margin">30dp</dimen>
+    <dimen name="text_vertical">5dp</dimen>
+    <dimen name="icon_image_margin">5dp</dimen>
+    <dimen name="icon_empty_padding">20dp</dimen>
+    <dimen name="icon_prof_right_margin">40dp</dimen>
+    <dimen name="profile_separate">20dp</dimen>
+    <dimen name="profile_note_pad_10dp">10dp</dimen>
+    <dimen name="text_prof_left_margin">20dp</dimen>
+    <dimen name="left_margin_label_expand">80dp</dimen>
+    <dimen name="left_text_size">25sp</dimen>
+    <dimen name="left_text_size_expand">20sp</dimen>
+    
+    <!--  Setting Main page styles -->
+    <dimen name="set_pad_item_top">40dp</dimen>
+    <dimen name="set_pad_item_bottom">5dp</dimen>
+    <dimen name="set_pad_item_left">30dp</dimen>
+    <dimen name="set_pad_sub_item_top">20dp</dimen>
+    <dimen name="set_item_text_size">18sp</dimen>
+    <dimen name="set_sub_item_text_size">20sp</dimen>
+    
+    
+
+    
+    <!--  Login page settings -->
+    <dimen name="login_text_size">20sp</dimen>
+    <dimen name="login_hw_text_size">15sp</dimen>   
+    <dimen name="login_nav_size">15sp</dimen>
+    <dimen name="login_forgot_text_size">15sp</dimen>
+    <dimen name="login_nopin_text_size">18sp</dimen>
+    <dimen name="login_register_err_size">10sp</dimen>
+    <dimen name="login_side_margin">60dp</dimen>
+    <dimen name="login_pad_bottom">5dp</dimen>
+    <dimen name="login_btn_margin_top">20dp</dimen>
+    <dimen name="login_item_margin_pad">10dp</dimen>
+    <dimen name="login_btn_pad">1dp</dimen>    
+    <dimen name="login_forgot_top">10dp</dimen>
+    <dimen name="login_hw_top">20dp</dimen>
+    <integer name="login_size_ems">11</integer>
+    
+    <!--  Login Register Pin page styles -->
+    <dimen name="lrp_pin_pad">10dp</dimen>
+    <dimen name="lrp_text_size">25sp</dimen>
+    <dimen name="lrp_desc_text_size">15sp</dimen>
+        
+    <!--  Login Register Success page styles -->
+    <dimen name="lrs_pad_margin">20dp</dimen>
+    <dimen name="lrs_pad_margin_30dp">30dp</dimen>
+    <dimen name="lrs_pad_margin_10dp">10dp</dimen>
+    <dimen name="lrs_text_size_30sp">30sp</dimen>
+    <dimen name="lrs_text_size_35sp">35sp</dimen>
+    <dimen name="lrs_text_size_15sp">15sp</dimen>
+    <dimen name="lrs_text_size_18sp">18sp</dimen>
+    
+    <!--  Login page settings -->
+    <dimen name="ab_text_size">20sp</dimen>
+    <dimen name="ab_button_size">15sp</dimen>
+    
+    <!--  Left deck search settings -->
+    <dimen name="ld_search_pad_20dp">20dp</dimen>
+    <dimen name="ld_search_pad_40dp">40dp</dimen>
+    <dimen name="ld_parent_pad_5dp">5dp</dimen>
+    <dimen name="ld_parent_pad_10dp">10dp</dimen>
+    <dimen name="ld_parent_pad_20dp">20dp</dimen>
+    
+	<!--  Left Deck Menu Styles -->
+   	<dimen name="left_deck_option_text_size">25sp</dimen>
+   	<dimen name="ld_add_margin_pad">40dp</dimen>
+ 	<dimen name="ld_add_top_pad">10dp</dimen>
+   	<dimen name="ld_add_left_pad">60dp</dimen>
+   	<dimen name="ld_sep_top_pad">10dp</dimen>
+   	<dimen name="ld_sep_left_pad">20dp</dimen>
+   	<dimen name="ld_optoin_left_pad">120dp</dimen>
+   	<dimen name="ld_image_width">60dp</dimen>
+   	<dimen name="ld_add_margin_pad_left">40dp</dimen>
+   							
+    <!--  New Profile Styles -->
+    <dimen name="pt_size_100dp">150dp</dimen>
+   	<dimen name="profile_new_top">20dp</dimen>
+   	<dimen name="profile_item_top">15dp</dimen>
+   	<dimen name="profile_side_margin">20dp</dimen>
+   	<dimen name="profile_side_margin_80dp">80dp</dimen>
+   		<dimen name="profile_padding_h">10dp</dimen>
+   	<dimen name="profile_new_text_size">25sp</dimen>
+   	
+	<!--  Success New Profile Styles -->
+	<dimen name="pcs_ts_45sp">45sp</dimen>   	
+	<dimen name="pcs_desc_pad_20dp">20dp</dimen>   	
+
+	<!--  Invite Page Styles -->
+	<dimen name="im_padding_20dp">20dp</dimen>				    
+	<dimen name="im_padding_10dp">10dp</dimen>				    
+	<dimen name="im_margin_100dp">100dp</dimen>				    
+	<dimen name="im_margin_60dp">60dp</dimen>				    
+	<dimen name="im_margin_40dp">40dp</dimen>	
+	<dimen name="im_text_size_25sp">25sp</dimen>	
+	<dimen name="im_text_size_22sp">22sp</dimen>	
+						    
+	<!-- Searching setting -->
+	<dimen name="csl_big">30sp</dimen>			
+	<dimen name="csl_small">25sp</dimen>
+	
+</resources>

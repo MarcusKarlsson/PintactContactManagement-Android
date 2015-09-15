@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    android:gravity="center_vertical"
+    android:background="@drawable/pintact_white_rect_with_1_bottom_line">
+
+
+    <com.pinplanet.pintact.utility.EditTextTypeFace
+        android:id="@+id/textViewChooserEntry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+        android:hint="@string/HINT_ADD_NEW_LABEL"
+        android:textSize="@dimen/TEXT_SIZE_LARGE"
+        android:text="dennis"
+        android:maxLines="1"
+        android:lines="1"
+        android:focusableInTouchMode="true"
+        android:ellipsize="end"
+        android:background="@null"
+        android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+        android:textColor="@color/PINTACT_TEXT_COLOR"
+        app:FontStyles="normal"
+        android:inputType="textVisiblePassword" />
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewAddLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/pintact_round_blue_rect"
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        android:text="@string/ADD"
+        android:textColor="@color/PINTACT_WHITE_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_LARGE"
+        android:textStyle="bold"
+        app:FontStyles="normal|bold"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL" />
+</LinearLayout>

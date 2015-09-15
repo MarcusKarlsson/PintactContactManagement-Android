@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/login_register_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/PINTACT_VIEW_BG_COLOR" >
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:text=""
+        android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_SMALL"
+        android:textStyle="bold"
+        app:FontStyles="normal|bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewInfo"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:padding="5dp" >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/textViewEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:padding="3dp"
+                android:text="@string/EMAIL"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="normal"
+                />
+
+            <com.pinplanet.pintact.utility.EditTextTypeFace
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.66"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/HINT_EMAIL"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="normal">
+                <requestFocus />
+                </com.pinplanet.pintact.utility.EditTextTypeFace>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:padding="5dp" >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/textViewMobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:padding="3dp"
+                android:text="@string/MOBILE"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="normal"
+                />
+            <com.pinplanet.pintact.utility.EditTextTypeFace
+                android:id="@+id/editTextCountryCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.11"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/HINT_COUNTRY_CODE"
+                android:inputType="phone"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="normal">
+            </com.pinplanet.pintact.utility.EditTextTypeFace>
+
+            <com.pinplanet.pintact.utility.EditTextTypeFace
+                android:id="@+id/editTextMobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.55"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/HINT_MOBILE"
+                android:inputType="phone"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="normal">
+            </com.pinplanet.pintact.utility.EditTextTypeFace>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:padding="5dp" >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/textViewPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:padding="3dp"
+                android:text="@string/PASSWORD"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="normal"
+                />
+
+            <RelativeLayout
+                android:layout_weight="0.66"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+                <com.pinplanet.pintact.utility.EditTextTypeFace
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/HINT_PASSWORD"
+                    android:inputType="textPassword"
+                    android:textColor="@color/PINTACT_TEXT_COLOR"
+                    android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                    android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                    app:FontStyles="normal"
+                    android:layout_gravity="center_vertical"
+                    android:imeOptions="actionDone" />
+
+                <ImageView
+                    android:id="@+id/hide_show_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/editTextPassword"
+                    android:layout_toRightOf="@+id/editTextPassword"
+                    android:background="@anim/background_imagebtn"
+                    android:clickable="true"
+                    android:contentDescription="@string/imageDesc"
+                    android:src="@drawable/eye_red" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:paddingTop="@dimen/PINTACT_ITEM_PADDING"
+            android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+            android:gravity="center"
+            >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/buttonNext"
+                style="@style/ButtonStyle"
+                android:clickable="false"
+                android:background="@drawable/pintact_round_orange_rect"
+                android:text="@string/NEXT"
+                app:FontStyles="bold"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+                android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

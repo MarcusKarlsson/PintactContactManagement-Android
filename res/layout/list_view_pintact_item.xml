@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    android:background="@drawable/pintact_selector_list_item_pintact"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:layout_height="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:background="@drawable/pintact_round_grey_rect_with_border"
+        >
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/textViewInitial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_XTRA_LARGE"
+            android:textStyle="normal"
+            android:background="@null"
+            android:lines="1"
+            android:maxLines="1"
+            app:FontStyles="normal"
+            android:gravity="center" />
+
+        <com.pinplanet.pintact.utility.CustomNetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageViewPicture"
+            android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING"
+            android:src="@drawable/silhouette"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageViewPictureLocal"
+            android:visibility="gone"
+            android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING"
+            android:src="@drawable/silhouette"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pintact_list_picture_frame"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/pintact_round_transparent_rect_with_border"
+                />
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PINTACT_TEXT_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_LARGE"
+            android:textStyle="bold"
+            android:lines="1"
+            android:maxLines="1"
+            app:FontStyles="bold"
+            android:background="@null" />
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/textViewSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PINTACT_DARKGRAY_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:textStyle="normal"
+            android:lines="1"
+            android:maxLines="1"
+            app:FontStyles="light"
+            android:background="@null" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/textViewActionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <!-- can be invite or add -->
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/textViewAction"
+            android:padding="@dimen/PINTACT_ITEM_PADDING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PINTACT_ORANGE_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:textStyle="bold"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/dummy"
+            app:FontStyles="light"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/pintact_round_transparent_orange_button_selector"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+            android:layout_marginEnd="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+            android:visibility="invisible" />
+
+     </LinearLayout>
+
+
+
+
+</LinearLayout>

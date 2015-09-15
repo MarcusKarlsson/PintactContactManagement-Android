@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+
+    <TextView style="@style/PCNSep"
+    	android:layout_height="1dp" 
+    	android:id="@+id/csv_top_sep"
+    	/>
+    
+    <TextView style="@style/SetItem"
+        android:text="@string/lm_members"
+        android:layout_below="@+id/csv_top_sep"
+        android:id="@+id/set_contact_sync" />
+    
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_below="@id/set_contact_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

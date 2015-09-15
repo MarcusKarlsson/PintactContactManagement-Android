@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/pintact_white_rect_with_2_lines"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    android:gravity="center_vertical">
+
+
+    <ImageView
+        android:id="@+id/imageViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_phone"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL" />
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"/>
+
+
+    <!-- IMPORTANT: android:focusable="false" / android:clickable="false" or never a group click will be fired -->
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/toggleButtonEditNote"
+        android:textOff="@string/LABEL_EDIT"
+        android:textOn="@string/DONE"
+        android:textColor="@color/PINTACT_WHITE_COLOR"
+        android:background="@drawable/pintact_round_blue_rect"
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        android:checked="false"
+        android:lines="1"
+        android:clickable="true"
+        android:textSize="@dimen/TEXT_SIZE_SMALL"
+        android:minHeight="10dp"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHeader"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:enabled="false"
+        android:checked="true"
+        android:visibility="gone"
+        android:button="@drawable/pintact_selector_profile_check_arrow" />
+
+</LinearLayout>

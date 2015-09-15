@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:id="@+id/searchResultTableRow"
+	    android:background="@color/PINTACT_WHITE_COLOR"
+	    android:onClick="onMenuClicked" >
+
+        <ImageView
+            android:id="@+id/searchProfileimageView"
+            android:contentDescription="@string/imageDesc"
+	        android:paddingTop="@dimen/ld_parent_pad_10dp"
+	        android:paddingBottom="@dimen/ld_parent_pad_10dp"
+	        android:paddingLeft="@dimen/ld_parent_pad_10dp"
+	        android:paddingRight="@dimen/ld_parent_pad_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ms" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:paddingTop="@dimen/ld_parent_pad_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+			    android:onClick="onMenuClicked"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/searchName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+				    android:onClick="onMenuClicked"
+                    android:textSize="@dimen/left_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/searchTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/text_vertical"
+                    android:textSize="@dimen/left_text_size_expand" />
+
+                </LinearLayout>
+        </ScrollView>
+        
+</TableRow>

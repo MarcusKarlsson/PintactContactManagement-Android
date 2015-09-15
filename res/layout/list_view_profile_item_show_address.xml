@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:gravity="center_vertical"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/textViewEntryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/ADDRESS"
+                android:textColor="@color/PINTACT_BLUE_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                android:textStyle="bold"
+                android:lines="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:drawablePadding="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+                android:gravity="left"
+                app:FontStyles="normal|bold"/>
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/textViewStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+                android:background="@null"
+                android:ellipsize="end"
+                android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                android:gravity="left"
+                app:FontStyles="normal"/>
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/textViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+                android:background="@null"
+                android:ellipsize="end"
+                android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                android:gravity="left"
+                app:FontStyles="normal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewActionOne"
+        android:src="@drawable/profile_icon_map"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:visibility="gone" />
+
+</RelativeLayout>

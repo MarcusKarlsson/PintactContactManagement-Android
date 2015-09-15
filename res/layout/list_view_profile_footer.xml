@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/pintact_white_rect_with_2_lines"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    android:gravity="center_vertical">
+
+
+    <ImageView
+        android:id="@+id/imageViewFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_plus_green"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL" />
+
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewFooter"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="add string here"
+        android:textColor="@color/PINTACT_BLUE_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_NORMAL"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/PINTACT_ITEM_PADDING"
+        android:gravity="left"
+        app:FontStyles="normal|bold"/>
+
+
+</LinearLayout>

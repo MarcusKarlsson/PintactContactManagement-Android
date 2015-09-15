@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/gm_edit_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PINTACT_LIGHTGRAY_COLOR"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/gpn_name_tv"
+            style="@style/GroupPinText"
+            android:layout_width="match_parent"
+            android:text="@string/gm_name" />
+
+        <EditText
+            android:id="@+id/groupNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gpn_name_tv"
+            android:background="@color/PINTACT_WHITE_COLOR"
+            android:hint="@string/gm_name_hint"
+            android:padding="10dp"
+            android:textColor="@color/gp_color"
+            android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR" />
+
+        <TextView
+            style="@style/GroupPinText"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/gm_name"
+            android:text="HOW SHOULD MEMBERS CONNECT?" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_1_bottom_line"
+            android:onClick="automaticSelected"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/automaticIcon"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/automatic_icon" />
+
+            <TextView
+                android:id="@+id/automaticTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@id/automaticIcon"
+                android:text="Automatically"
+                android:textSize="@dimen/TEXT_SIZE_LARGE"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/automaticCircle"
+                android:layout_width="@dimen/csl_small"
+                android:layout_height="@dimen/csl_small"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/automaticTV"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/automaticIcon"
+                android:text="@string/group_automatic_description" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_round_white_rect"
+            android:onClick="manualSelected"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/manualIcon"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/manual_icon" />
+
+            <TextView
+                android:id="@+id/manualTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/manualIcon"
+                android:text="Manual"
+                android:textSize="@dimen/TEXT_SIZE_LARGE"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/manualCircle"
+                android:layout_width="@dimen/csl_small"
+                android:layout_height="@dimen/csl_small"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manualTV"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/manualIcon"
+                android:text="@string/group_manual_description" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/GroupPinText"
+            android:layout_width="match_parent"
+            android:text="DO YOU WANT TO MODERATE MEMBERS?" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_1_bottom_line"
+            android:onClick="yesSelected"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/moderateYesIcon"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/moderate_yes_icon" />
+
+            <TextView
+                android:id="@+id/moderateYesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/moderateYesIcon"
+                android:text="Yes"
+                android:textSize="@dimen/TEXT_SIZE_LARGE"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/moderateYesCircle"
+                android:layout_width="@dimen/csl_small"
+                android:layout_height="@dimen/csl_small"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moderateYesTV"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/moderateYesIcon"
+                android:text="@string/group_moderate_yes_description" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_round_white_rect"
+            android:onClick="noSelected"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/moderateNoIcon"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/moderate_no_icon" />
+
+            <TextView
+                android:id="@+id/moderateNoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/moderateNoIcon"
+                android:text="No"
+                android:textSize="@dimen/TEXT_SIZE_LARGE"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/moderateNoCircle"
+                android:layout_width="@dimen/csl_small"
+                android:layout_height="@dimen/csl_small"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/circle" />
+
+            <TextView
+                android:id="@+id/moderateNoDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moderateNoTV"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/moderateNoIcon"
+                android:text="@string/group_moderate_no_description" />
+
+            <Spinner
+                android:id="@+id/timeOptionSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moderateNoDescription"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/moderateNoIcon"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/GroupPinText"
+            android:layout_width="match_parent"
+            android:text="SELECT PROFILES TO SHARE IN GROUP" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/ps_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_pin_tv">
+
+            <LinearLayout
+                android:id="@+id/ps_share_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"></LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/createGroupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@color/PINTACT_GRAY_COLOR"
+                android:clickable="false"
+                android:onClick="createGroupSelected"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="@string/gm_create"
+                android:textColor="@color/PINTACT_WHITE_COLOR"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

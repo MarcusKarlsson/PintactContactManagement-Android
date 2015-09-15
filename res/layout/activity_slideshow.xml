@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tourpager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/pagerPoints"
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomButtons"
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/buttonBottomLeft"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/PINTACT_ITEM_PADDING"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="@dimen/PINTACT_BIG_BUTTON_PADDING"
+            android:textColor="@color/PINTACT_ORANGE_COLOR"
+            android:background="@drawable/pintact_round_transparent_orange_button_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/SIGN_IN"
+            android:lines="1"
+            app:FontStyles="bold" />
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/buttonBottomRight"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="@dimen/PINTACT_BIG_BUTTON_PADDING"
+            android:textColor="@color/PINTACT_ORANGE_COLOR"
+            android:background="@drawable/pintact_round_transparent_orange_button_selector"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/JOIN_PINTACT"
+            android:lines="1"
+            app:FontStyles="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

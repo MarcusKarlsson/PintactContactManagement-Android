@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_congrats_bg" >
+
+    <TextView style="@style/IMPersonal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nm_invite"
+        android:id="@+id/notify_topic"
+        />
+
+    <TextView style="@style/IMPersonal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/notify_topic"
+              android:layout_alignParentRight="true"
+              android:text="@string/mark_all_as_read"
+              android:id="@+id/mark_all_as_read"
+              android:visibility="gone"
+        />
+
+</RelativeLayout>

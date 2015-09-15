@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/pintact_white_rect_with_2_lines"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL">
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:id="@+id/textViewEntryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/PHONE"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/PINTACT_BLUE_COLOR"
+                    android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                    android:textStyle="bold"
+                    android:drawablePadding="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+                    android:gravity="left"
+                    app:FontStyles="normal|bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageViewBlueArrow"
+                    android:src="@drawable/arrow_blue"
+                    android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerTitle"
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:prompt="@string/SPINNER_CREATE_PROFILE_PROMPT"
+                android:visibility="invisible"
+                android:spinnerMode="dialog" />
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/editTextEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                android:textColor="@color/PINTACT_TEXT_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="normal"
+                android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+                 />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewActionOne"
+        android:src="@drawable/profile_icon_phone"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewActionTwo"
+        android:src="@drawable/profile_icon_text"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageViewActionOne"
+        android:visibility="gone" />
+
+</RelativeLayout>

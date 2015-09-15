@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/login_congrats_bg" >
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/group_profile_view" >
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/PINTACT_DARKGRAY_COLOR"
+	        android:id="@+id/gps_pin_tv"
+	        android:layout_marginTop="@dimen/login_btn_margin_top"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginStart="5dp"
+	        android:text="@string/gm_select_profile"
+	        />
+	    
+	    <HorizontalScrollView
+	        android:id="@+id/ps_scroll"
+	        android:layout_below="@+id/gps_pin_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/PINTACT_WHITE_COLOR">
+	        
+	        <LinearLayout
+	            android:id="@+id/ps_share_lo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="20dp"
+	            android:orientation="horizontal" >
+	            
+	       	</LinearLayout>
+	        
+	    </HorizontalScrollView>
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/PINTACT_DARKGRAY_COLOR"
+	        android:id="@+id/gps_msg_title"
+	        android:layout_marginTop="@dimen/login_btn_margin_top"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginStart="5dp"
+	        android:layout_below="@+id/ps_scroll"
+	        android:text="@string/gm_msg_title"
+	        />
+	    
+	    <FrameLayout
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:layout_below="@+id/gps_msg_title"
+	        android:background="@color/PINTACT_LIGHTGRAY_COLOR"
+	        android:id="@+id/gps_msg_frame">
+	    
+		    <EditText
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/PINTACT_WHITE_COLOR"
+		        android:id="@+id/gps_msg_cont"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:lines="4"
+		        android:inputType="textMultiLine"
+		        android:gravity="top|left"
+		        android:maxLines="10"
+		        android:scrollbars="vertical"
+		        android:text="@string/gm_msg_hint"
+		        />
+	    
+	    </FrameLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/gps_msg_frame"
+	        android:orientation="horizontal"
+	        android:background="@color/PINTACT_WHITE_COLOR"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        >
+	    
+		    <TextView style="@style/GMSend"
+		        android:text="@string/gm_preview"
+	            android:background="@drawable/pintact_round_blue_rect"
+		        android:id="@+id/gm_preview" 
+		        android:layout_weight="1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        />    
+		
+		    <TextView style="@style/GMSend"
+		        android:text="@string/gm_share"
+		        android:id="@+id/gm_share"
+	            android:background="@drawable/pintact_round_orange_rect"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginStart="20dp"
+		        android:layout_weight="1"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        />
+	    
+	    </LinearLayout>    
+	    	
+	</RelativeLayout>
+</ScrollView>

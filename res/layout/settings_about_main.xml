@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/PINTACT_WHITE_COLOR">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Sync -->
+        <TextView style="@style/SetItemInfo"
+                  android:text="@string/about_setting_info_text"
+                  android:id="@+id/about_setting_info_text" />
+        
+        <TextView style="@style/SetItemInfo"
+                  android:layout_below="@+id/about_setting_info_text"
+                  android:paddingBottom="20dp"
+                  android:id="@+id/about_info_version" />
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/about_info_version"
+                  android:id="@+id/set_item_sep1" />
+
+        <RelativeLayout
+	        android:id="@+id/about_faq_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            android:layout_below="@+id/set_item_sep1">
+	        <TextView style="@style/SetSubItem"
+	                  android:text="@string/about_setting_faq"
+	                  android:id="@+id/about_setting_faq" />
+	
+	        <ImageView
+                  	android:id="@+id/set_sort_set1"
+		            style="@style/SetArrow"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:contentDescription="@string/dummy"
+		            android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/about_faq_wrapper"
+                  android:id="@+id/set_sub_item_sep_faq_setting" />
+
+        <RelativeLayout
+	        android:id="@+id/about_terms_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            android:layout_below="@+id/set_sub_item_sep_faq_setting">
+	        <TextView style="@style/SetSubItem"
+	                  android:text="@string/about_setting_terms"
+	                  android:id="@+id/about_setting_terms" />
+	
+	        <ImageView
+                  	android:id="@+id/set_search_setting_set1"
+		            style="@style/SetArrow"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:contentDescription="@string/dummy"
+		            android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/about_terms_wrapper"
+                  android:id="@+id/set_sub_item_sep_terms" />
+
+        <RelativeLayout
+	        android:id="@+id/about_privacy_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            android:layout_below="@+id/set_sub_item_sep_terms">
+	        <TextView style="@style/SetSubItem"
+	                  android:text="@string/about_setting_privacy"
+	                  android:id="@+id/about_setting_privacy" />
+	
+	        <ImageView
+                  	android:id="@+id/set_set_about_terms_set1"
+		            style="@style/SetArrow"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:contentDescription="@string/dummy"
+		            android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/about_privacy_wrapper"
+                  android:id="@+id/set_item_logout1" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+    
+    <TextView style="@style/SSDesc"
+        android:id="@+id/ss_desc"
+        android:text="@string/ss_desc"
+        />
+
+    <TextView style="@style/IMSend"
+        android:layout_below="@+id/ss_desc"
+        android:layout_marginTop="@dimen/im_margin_40dp"
+        android:text="@string/ss_yes"
+        android:id="@+id/ss_yes" 
+        />
+
+    <TextView style="@style/IMSend"
+        android:layout_below="@+id/ss_yes"
+        android:layout_marginTop="@dimen/im_margin_40dp"
+        android:background="@drawable/border_search_no"
+        android:textColor="@color/lf_text"
+        android:text="@string/ss_no"
+        android:id="@+id/ss_no" 
+        />
+
+    
+</RelativeLayout>

@@ -1,0 +1,331 @@
+/*::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::: Kirill Miniaev | Miniaev Design ::::::::*/
+/*: kirill@miniaevdesign.com | miniaevdesign.com :*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*:::::: MIXINS ::::::*/
+/*:::::: HIGH LEVEL ELTS ::::::*/
+/* line 10, login.scss */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* line 16, login.scss */
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* line 26, login.scss */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*:::::: SHARED ELTS ::::::*/
+
+/* line 55, login.scss */
+.wrapper {
+    position: relative;
+    display: block;
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 12px;
+    z-index: 1;
+    font-size: 0;
+}
+
+/* Content Elements */
+/* line 78, login.scss */
+#content {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    background: #f0f0f0;
+    height: auto;
+    min-height: 100%;
+}
+
+/* line 96, login.scss */
+#content:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/noise.png);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* line 107, login.scss */
+#content .wrapper {
+    height: 100%;
+    padding-top: 20px;
+}
+
+/* line 110, login.scss */
+#contentWindow {
+    display: block;
+    background-color: #fcfcfc;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 750px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* line 147, login.scss */
+#contentWindow-Footer {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 14px;
+    background-image: url(../images/grayFooter-14px.svg);
+    background-repeat: repeat-x;
+    border-top: 1px solid #cccccc;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* line 163, login.scss */
+#contentWindow-Content {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* line 172, login.scss */
+#footerNav {
+    display: block;
+    width: 100%;
+}
+
+/* line 177, login.scss */
+#footerNav ul {
+    font-size: 0;
+    display: block;
+    margin: 10px 0 30px 15px;
+}
+
+/* line 180, login.scss */
+#footerNav ul li {
+    display: inline-block;
+    padding-left: 30px;
+    font-family: 'Trebuchet MS', Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: #808080;
+}
+
+/* line 186, login.scss */
+#footerNav ul li:first-of-type {
+    padding-right: 20px;
+    padding-left: 0px;
+    border-right: 1px solid #808080;
+}
+
+/* line 191, login.scss */
+#footerNav ul li a {
+    color: #808080;
+    text-decoration: none;
+}
+
+/* line 195, login.scss */
+#footerNav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* CONTENT WINDOW CONTENTS */
+#contentInner h2 {
+    display: block;
+    font-family: 'Trebuchet MS', Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #4d4d4d;
+    white-space: normal
+}
+#contentInner p,
+#contentInner ol,
+#contentInner ul {
+    display: block;
+    font-family: 'Trebuchet MS', Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    font-style: normal;
+    color: #4d4d4d;
+    white-space: normal;
+}
+#contentInner em {
+    text-decoration: underline;
+}
+#contentInner i {
+    font-style: italic;
+}
+#contentInner b {
+    font-weight: 700;
+}
+#contentInner a {
+    color: #00acd7;
+    text-decoration: none;
+}
+#contentInner a:hover {
+    text-decoration: underline;
+}
+#contentInner .qablock {
+    position: relative;
+}
+#contentInner .qablock:last-of-type {
+    margin-bottom: 13px;
+}
+#contentInner .qablock h2 {
+    padding: 10px 15px 8px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #f9f9f9;
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #efefef 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#efefef));
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%,#efefef 100%);
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#efefef 100%);
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#efefef 100%);
+    background: linear-gradient(to bottom,  #f9f9f9 0%,#efefef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#efefef',GradientType=0 );
+    position: relative;
+    cursor: pointer;
+}
+#contentInner .qablock h2:hover {
+    background: #f2f2f2;
+    background: -moz-linear-gradient(top,  #f2f2f2 0%, #e6e6e6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#e6e6e6));
+    background: -webkit-linear-gradient(top,  #f2f2f2 0%,#e6e6e6 100%);
+    background: -o-linear-gradient(top,  #f2f2f2 0%,#e6e6e6 100%);
+    background: -ms-linear-gradient(top,  #f2f2f2 0%,#e6e6e6 100%);
+    background: linear-gradient(to bottom,  #f2f2f2 0%,#e6e6e6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e6e6e6',GradientType=0 );
+}
+#contentInner .qablock:first-of-type h2 {
+    border-top: none;
+}
+#contentInner .qablock p {
+    display: none;
+    padding: 0 15px 10px;
+}
+#contentInner .qablock p:first-of-type {
+    padding: 10px 15px;
+}
+
+/* CONTENT */
+#contentInner .contentBlock {
+    position: relative;
+}
+#contentInner .contentBlock:last-of-type {
+    margin-bottom: 13px;
+}
+#contentInner .contentBlock h2 {
+    padding: 10px 15px 8px;
+    margin-bottom: 10px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; position: relative;
+}
+#contentInner .contentBlock:first-of-type h2 {
+    border-top: none;
+}
+#contentInner .contentBlock p {
+    display: block;
+    padding: 0 15px 10px;
+}
+#contentInner .contentBlock p:first-of-type {
+    padding: 10px 15px;
+}
+
+#contentInner .contentBlock ol.alpha {
+    list-style: upper-latin;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+#contentInner .contentBlock ol.alpha ol,
+#contentInner .contentBlock ol.alpha ul,
+#contentInner .contentBlock ol.roman_lower {
+    margin-top: 10px;
+}
+#contentInner .contentBlock ol li {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+#contentInner .contentBlock > ol.alpha_lower {
+    padding: 0 20px;
+}
+#contentInner .contentBlock ol.alpha_lower {
+    list-style: lower-latin;
+    margin-bottom: 10px;
+}
+#contentInner .contentBlock ol.roman_lower {
+    list-style: lower-roman;
+    margin-bottom: 10px;
+}
+#contentInner .contentBlock ul {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+    .wrapper {
+        width: 100%;
+    }
+    #contentWindow {
+        width: 95%;
+    }
+    #contentWindow-Header h1 {
+        line-height: 40px;
+    }
+    #footerNav ul {
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    #footerNav ul li {
+        display: block;
+        padding-left: 0;
+        margin: 7px 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    #footerNav ul {
+        margin-left: 0;
+    }
+    #footerNav ul li:first-of-type {
+        padding-right: 0;
+        padding-left: 0;
+        border-right: none;
+        font-size: 15px;
+    }
+}

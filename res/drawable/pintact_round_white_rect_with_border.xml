@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+      <solid android:color="@color/PINTACT_WHITE_COLOR" />
+      <stroke android:width="@dimen/PINTACT_LINE_HEIGHT" android:color="@color/PINTACT_GRAY_COLOR" />
+      <corners android:radius="4dp" />
+</shape>
+

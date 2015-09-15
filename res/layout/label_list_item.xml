@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@anim/background_listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/label_contents_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false" >
+
+        <RelativeLayout
+            android:id="@+id/label_text_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/view_add"
+            android:layout_toStartOf="@+id/view_add" >
+
+            <TextView style="@style/LLIText"
+                android:textColor="@color/PINTACT_BLUE_COLOR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:visibility="invisible"
+                android:id="@+id/label_view"
+                android:layout_marginLeft="@dimen/label_left_margin"
+                android:layout_marginStart="@dimen/label_left_margin"
+                />
+
+            <EditText style="@style/LLIText"
+                android:textColorHint="@color/profile_title"
+                android:textColor="@color/PINTACT_BLUE_COLOR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:hint="@string/lli_labelname"
+                android:id="@+id/label_input"
+                android:layout_marginLeft="@dimen/label_left_margin"
+                android:layout_marginStart="@dimen/label_left_margin"
+                android:inputType="textVisiblePassword" />
+
+            <TextView style="@style/LLIText"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/label_view"
+                android:id="@+id/label_members"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="@dimen/label_left_margin"
+                android:layout_marginStart="@dimen/label_left_margin"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/view_add"
+            android:textColor="@color/profile_title"
+            android:layout_marginRight="@dimen/label_right_margin"
+            android:layout_marginEnd="@dimen/label_right_margin"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/dummy"
+            android:layout_centerVertical="true"
+            android:text="@string/ADD"
+            />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/label_left_margin"
+            android:layout_marginStart="@dimen/label_left_margin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:contentDescription="@string/dummy"
+            android:src="@drawable/icon_minus_red"
+            android:id="@+id/view_delete"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView style="@style/IMBottom"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/im_margin_60dp"
+            android:layout_marginEnd="@dimen/im_margin_60dp"
+            android:contentDescription="@string/dummy"
+            android:src="@drawable/circle"
+            android:id="@+id/label_check"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/lil_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/label_right_margin"
+            android:layout_marginEnd="@dimen/label_right_margin"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/dummy"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/label_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/label_contents_container"
+        android:layout_marginLeft="@dimen/label_left_margin"
+        android:layout_marginStart="@dimen/label_left_margin"
+        android:layout_marginRight="@dimen/label_right_margin"
+        android:layout_marginEnd="@dimen/label_right_margin"
+        android:background="@color/lr_hint_bg"
+        />
+
+    <RelativeLayout
+        android:id="@+id/lli_delete_confirm_container"
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/label_delete_shift"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/PINTACT_ORANGE_COLOR"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <TextView style="@style/LLIText"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="0dp"
+            android:id="@+id/lli_delete_confirm"
+            android:text="@string/DELETE"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

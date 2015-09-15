@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+  <!--  <padding android:left="15dp" android:right="15dp"/> -->  
+      <solid android:color="@color/PINTACT_BLACK_ALPHA_COLOR" />
+      <stroke android:width="@dimen/PINTACT_LINE_HEIGHT" android:color="@color/PINTACT_LIGHTGRAY_ALPHA_COLOR" />
+      <corners android:radius="4dp" />
+</shape>

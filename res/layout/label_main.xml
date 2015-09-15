@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/label_main_view"
+    android:background="@color/PINTACT_WHITE_COLOR"
+    android:clipChildren="false"
+    >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/PINTACT_WHITE_COLOR"
+    android:clipChildren="false" >
+    
+   	<LinearLayout style="@style/PCNLinear"
+   	    android:orientation="vertical"
+        android:id="@+id/lm_llo"
+        android:clipChildren="false" >
+
+   		<TextView
+   		    style="@style/LLIInstruct"
+   		    android:id="@+id/textView1"
+   		    android:text="@string/lm_main_instruct" />
+	
+ 	</LinearLayout>
+ 	    
+   	<RelativeLayout 
+   	    android:layout_below="@+id/lm_llo"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:clickable="true"
+    	android:id="@+id/lm_clkLO"
+    	android:paddingTop="20dp"
+    	android:paddingBottom="10dp"
+    	android:layout_marginLeft="@dimen/label_left_margin"
+   	    >
+		<ImageView
+			android:layout_width="@dimen/pcn_icon_size"
+	    	android:layout_height="@dimen/pcn_icon_size"
+	    	android:clickable="true"
+	    	android:layout_marginTop="@dimen/profile_item_top"
+	    	android:id="@+id/lm_icon"
+	    	android:contentDescription="@string/dummy"
+	    	android:src="@drawable/plus_blue"
+		    />
+		
+		<TextView style="@style/PCNAddText"
+		    android:layout_marginLeft="10dp"
+		    android:layout_toRightOf="@+id/lm_icon"
+		    android:clickable="true"
+		    android:id="@+id/lm_btn"
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/lm_add"
+		    />
+	</RelativeLayout>
+    
+</RelativeLayout>
+</ScrollView>

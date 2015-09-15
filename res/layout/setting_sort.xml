@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PINTACT_LIGHTGRAY_COLOR">
+    
+    <Space
+        android:id="@+id/setting_sort_space"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@color/PINTACT_WHITE_COLOR"
+	    android:layout_below="@id/setting_sort_space" >
+	    
+	    <TextView style="@style/SetItemSep" />
+	
+	    <RadioButton
+	        android:id="@+id/set_sort_kind1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/set_sub_item_text_size"
+	        android:checked="true"
+	        android:layout_margin="@dimen/set_pad_sub_item_top"
+	        android:text="@string/set_sort1"
+	        android:textColor="@color/PINTACT_BLUE_COLOR" />
+	    
+	    <TextView style="@style/SetSubItemSep"
+			android:layout_marginRight="0dp"
+			android:layout_marginEnd="0dp" />
+	
+	    <RadioButton
+	        android:id="@+id/set_sort_kind2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/set_pad_sub_item_top"
+	        android:textSize="@dimen/set_sub_item_text_size"
+	        android:text="@string/set_sort2"
+	        android:textColor="@color/PINTACT_BLUE_COLOR" />
+	    
+	    <TextView style="@style/SetItemSep" />
+	
+	</LinearLayout>
+</RelativeLayout>

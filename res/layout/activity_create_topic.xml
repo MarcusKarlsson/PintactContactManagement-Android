@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/PINTACT_LIGHTGRAY_COLOR"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:text="@string/thread_name"
+        android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_LARGE"
+        android:textStyle="bold"
+        app:FontStyles="normal|bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:padding="0dp">
+
+        <EditText
+            android:id="@+id/topic_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="@string/gm_name_hint"
+            android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+            android:textColor="@color/gp_color"
+            android:textStyle="italic"
+            android:inputType="textCapWords"
+            android:background="@color/PINTACT_WHITE_COLOR"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/PCNSep"
+            android:layout_height="1dp"
+            android:id="@+id/csv_top_sep"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/im_padding_20dp"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:padding="5dp" >
+        <TextView
+            android:id="@+id/start_topic_button"
+            style="@style/BigOrangeButtonStyle"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/im_padding_10dp"
+            android:text="@string/start_thread"
+            android:textSize="@dimen/csl_small"
+            android:textStyle="normal"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="@dimen/im_margin_60dp"
+            android:layout_marginRight="@dimen/im_margin_60dp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>

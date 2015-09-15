@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/PINTACT_WHITE_COLOR">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Sync -->
+        <TextView style="@style/SetItemInfo"
+                  android:text="@string/search_setting_info_text"
+                  android:textStyle="italic"
+                  android:id="@+id/search_setting_info_text" />
+
+        <TextView style="@style/SetItem"
+                  android:text="@string/search_setting_status"
+                  android:layout_below="@+id/search_setting_info_text"
+                  android:id="@+id/search_setting_status" />
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/search_setting_status"
+                  android:id="@+id/set_item_sep1" />
+
+        <TextView style="@style/SetSubItem"
+                  android:layout_below="@+id/set_item_sep1"
+                  android:text="@string/set_search_setting_privacy_text"
+                  android:id="@+id/set_search_setting_privacy_text" />
+
+        <Switch style="@style/SetSwitch"
+                android:layout_below="@+id/set_item_sep1"
+                android:layout_toRightOf="@+id/set_search_setting_privacy_text"
+                android:layout_toEndOf="@+id/set_search_setting_privacy_text"
+                android:id="@+id/set_search_setting_privacy_switch" />
+
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/set_search_setting_privacy_text"
+                  android:id="@+id/set_item_sep2" />
+
+
+        <!-- Security -->
+
+        <TextView style="@style/SetItem"
+                  android:text="@string/set_search_setting_search_field_header"
+                  android:layout_below="@+id/set_item_sep2"
+                  android:id="@+id/set_search_setting_search_field_header" />
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/set_search_setting_search_field_header"
+                  android:id="@+id/set_item_sep3" />
+        <TableLayout android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                     android:stretchColumns="*"
+                     android:layout_below="@+id/set_item_sep3"
+                     android:id="@+id/set_search_setting_search_field_table">
+            <TableRow>
+                <TextView style="@style/SetSubItem"
+                      android:text="@string/set_search_setting_search_field_pin"
+                      android:id="@+id/set_search_setting_search_field_pin" />
+
+            <!--  is show local -->
+                <TextView
+                        android:id="@+id/set_search_setting_search_field_pin_text" />
+            </TableRow>
+
+            <TextView style="@style/SetSubItemSep"
+                      android:id="@+id/set_sub_item_sep1" />
+        <!--  end of show native -->
+            <TableRow>
+                <TextView style="@style/SetSubItem"
+                          android:text="@string/set_search_setting_search_field_fname"
+                          android:id="@+id/set_search_setting_search_field_fname" />
+
+                <EditText
+                        android:background="@color/PINTACT_WHITE_COLOR"
+                        android:id="@+id/set_search_setting_search_field_fname_text"
+                          android:singleLine="true"
+                          android:inputType="textCapWords" />
+            </TableRow>
+            <TextView style="@style/SetSubItemSep"
+                      android:id="@+id/set_sub_item_table_sep2" />
+            <TableRow>
+                <TextView style="@style/SetSubItem"
+                          android:text="@string/set_search_setting_search_field_lname"
+                          android:id="@+id/set_search_setting_search_field_lname" />
+
+                <EditText
+                          android:background="@color/PINTACT_WHITE_COLOR"
+                          android:id="@+id/set_search_setting_search_field_lname_text"
+                          android:singleLine="true"
+                          android:inputType="textCapWords" />
+            </TableRow>
+            <TextView style="@style/SetSubItemSep"
+                      android:id="@+id/set_sub_item_table_sep4" />
+            <TableRow>
+                <TextView style="@style/SetSubItem"
+                          android:text="@string/set_search_setting_search_field_title"
+                          android:id="@+id/set_search_setting_search_field_title" />
+
+                <EditText
+                          android:hint="@string/set_search_setting_search_field_title_hint"
+                          android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                          android:background="@color/PINTACT_WHITE_COLOR"
+                          android:id="@+id/set_search_setting_search_field_title_text"
+                          android:singleLine="true"
+                          android:inputType="textCapWords" />
+            </TableRow>
+            <TextView style="@style/SetSubItemSep"
+                      android:id="@+id/set_sub_item_table_sep3" />
+            <TableRow>
+                <TextView style="@style/SetSubItem"
+                          android:text="@string/set_search_setting_search_field_company"
+                          android:id="@+id/set_search_setting_search_field_company" />
+
+                <EditText
+                          android:hint="@string/set_search_setting_search_field_company_hint"
+                          android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                          android:background="@color/PINTACT_WHITE_COLOR"
+                          android:id="@+id/set_search_setting_search_field_company_text"
+                          android:singleLine="true"
+                          android:inputType="textCapWords" />
+            </TableRow>
+            <TextView style="@style/SetSubItemSep"
+                      android:id="@+id/set_sub_item_table_sep5" />
+            <TableRow>
+                <TextView style="@style/SetSubItem"
+                          android:text="@string/set_search_setting_search_field_city"
+                          android:id="@+id/set_search_setting_search_field_city" />
+
+                <EditText
+                          android:hint="@string/set_search_setting_search_field_city_hint"
+                          android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                          android:background="@color/PINTACT_WHITE_COLOR"
+                          android:id="@+id/set_search_setting_search_field_city_text"
+                          android:singleLine="true"
+                          android:inputType="textCapWords" />
+            </TableRow>
+            <TextView style="@style/SetSubItemSep"
+                      android:id="@+id/set_sub_item_table_sep6" />
+            <TableRow>
+                <TextView style="@style/SetSubItem"
+                          android:text="@string/set_search_setting_search_field_state"
+                          android:id="@+id/set_search_setting_search_field_state" />
+
+                <EditText
+                          android:hint="@string/set_search_setting_search_field_state_hint"
+                          android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+                          android:background="@color/PINTACT_WHITE_COLOR"
+                          android:id="@+id/set_search_setting_search_field_state_text"
+                          android:singleLine="true"
+                          android:inputType="textCapWords" />
+            </TableRow>
+        </TableLayout>
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/set_search_setting_search_field_table"
+                  android:id="@+id/set_item_sep4" />
+        
+        <Space
+	        android:layout_below="@id/set_item_sep4"
+	        android:layout_width="match_parent"
+	        android:layout_height="5dp"
+	        android:id="@+id/search_image_space" />
+        
+        <LinearLayout
+            android:id="@+id/image_holder"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/search_image_space"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="@dimen/pcn_image_size"
+                android:layout_height="@dimen/pcn_image_size"
+                android:layout_marginLeft="@dimen/profile_side_margin">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/PINTACT_LINE_HEIGHT"
+                    android:src="@drawable/add_an_image"/>
+
+                <com.pinplanet.pintact.utility.CustomNetworkImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/pcn_image"
+                    android:onClick="createAttachDialog"
+                    android:padding="@dimen/PINTACT_LINE_HEIGHT"
+                    android:src="@null"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+	        android:layout_below="@id/search_image_space"
+            android:layout_toRightOf="@id/image_holder"
+            android:layout_toEndOf="@id/image_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        
+	        <TextView
+	            style="@style/ButtonStyle"
+	            android:onClick="createAttachDialog"
+                android:background="@drawable/pintact_round_blue_rect"
+		        android:text="@string/search_setting_change_image"
+		        android:id="@+id/pcn_image_change"
+		        android:visibility="gone"
+		        android:layout_margin="10dp"/>
+	        
+        </LinearLayout>
+
+        <TextView style="@style/SetSubItem"
+                  android:layout_below="@+id/set_item_sep4"
+                  android:layout_toRightOf="@id/image_holder"
+                  android:layout_toEndOf="@id/image_holder"
+                  android:text="@string/set_search_setting_image_text"
+                  android:id="@+id/image_text"
+                  />
+        
+        <Space
+	        android:layout_below="@id/image_holder"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

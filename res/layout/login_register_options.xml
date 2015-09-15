@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_register_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PINTACT_VIEW_BG_COLOR">
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewSelectOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:text="@string/REGISTER_SELECT_AN_OPTION"
+        android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_SMALL"
+        android:textStyle="bold"
+        app:FontStyles="normal|bold" />
+
+    <LinearLayout
+        android:id="@+id/FacebookLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSelectOption"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_ITEM_PADDING">
+
+        <ImageButton
+            android:id="@+id/facebookLoginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:background="@drawable/register_facebook"
+            android:gravity="center"
+            android:onClick="facebookLoginClicked" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinkedInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacebookLayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_ITEM_PADDING">
+
+        <ImageButton
+            android:id="@+id/linkedInLoginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:background="@drawable/register_linkedin"
+            android:gravity="center"
+            android:onClick="registerManuallyClicked" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/googleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinkedInLayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_ITEM_PADDING">
+
+        <ImageButton
+            android:id="@+id/googleLoginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:background="@drawable/register_google"
+            android:gravity="center"
+            android:onClick="googleLoginClicked" />
+    </LinearLayout>
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewOrManually"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/googleLayout"
+        android:layout_centerHorizontal="true"
+        android:text="------OR-----"
+        android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_SMALL"
+        android:textStyle="bold"
+        app:FontStyles="normal|bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOrManually"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:gravity="center"
+        android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_ITEM_PADDING">
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/buttonNext"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:background="@drawable/pintact_round_orange_rect"
+            android:clickable="true"
+            android:onClick="registerManuallyClicked"
+            android:text="@string/REGISTER_MANUALLY"
+            app:FontStyles="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

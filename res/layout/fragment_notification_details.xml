@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.late.gui.ExpandableListViewAdvanced
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewNotificationDetails"
+            android:groupIndicator="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <!-- layoutShareProfiles starts -->
+        <LinearLayout
+            android:id="@+id/layoutShareProfiles"
+            android:orientation="vertical"
+            android:layout_below="@+id/listViewNotificationDetails"
+            android:layout_width="match_parent"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/PINTACT_MARGIN_VIEW_VERTICAL">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/list_view_notification_group" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView"
+                android:background="@null">
+
+                <LinearLayout
+                    android:id="@+id/share_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:minHeight="10dp" />
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/pintact_white_rect_with_1_top_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/PINTACT_ITEM_PADDING">
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:id="@+id/textViewFooter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/PROFILE_SELECTED"
+                    android:textColor="@color/PINTACT_BLUE_COLOR"
+                    android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+                    android:gravity="left"
+                    app:FontStyles="light|italic"/>
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+                    android:background="@color/PINTACT_TRANSPARENT_COLOR"
+                    android:textColor="@color/PINTACT_BLACK_COLOR"
+                    android:textSize="@dimen/profile_new_text_size"
+                    android:textStyle="italic"
+                    android:id="@+id/tv_share"
+                    android:layout_below="@+id/pcn_rel_layout"
+                    app:FontStyles="light|italic"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/PINTACT_ITEM_PADDING"
+                android:background="@drawable/pintact_white_rect_with_1_top_line">
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:id="@+id/tv_hide_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/PINTACT_WHITE_COLOR"
+                    android:gravity="center"
+                    android:background="@drawable/pintact_round_blue_rect"
+                    android:textSize="@dimen/profile_new_text_size"
+                    android:text="@string/ab_cancel"
+                    android:padding="@dimen/PINTACT_ITEM_PADDING"
+                    android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_height="1dp"/>
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:id="@+id/tv_preview_share_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/PINTACT_WHITE_COLOR"
+                    android:gravity="center"
+                    android:background="@drawable/pintact_round_blue_rect"
+                    android:textSize="@dimen/profile_new_text_size"
+                    android:text="@string/gm_preview"
+                    android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="0.05"
+                    android:layout_height="1dp"/>
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:id="@+id/tv_accept_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+                    android:textColor="@color/PINTACT_WHITE_COLOR"
+                    android:gravity="center"
+                    android:background="@drawable/pintact_round_orange_rect"
+                    android:textSize="@dimen/profile_new_text_size"
+                    android:text="@string/ab_accept"
+                    android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- layoutShareProfiles ends -->
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

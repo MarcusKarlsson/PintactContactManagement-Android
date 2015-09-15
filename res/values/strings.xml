@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="version_code">6</integer>
+    <string name="version_name">1.0.5</string>
+    <string name="app_name">Pintact</string>
+    <string name="unknown_error">Unknown Error</string>
+    <!--<string name="pintact_server_url">https://pintact.com</string>-->
+    <string name="facebook_app_id">725659180889061</string>
+    <!--<string name="facebook_app_id">746487388806240</string>   test id-->
+    <string name="pintact_server_url">https://staging-2046413205.us-east-1.elb.amazonaws.com</string>
+    <!--<string name="pintact_server_url">http://192.168.0.104:8080</string>-->
+    <!--<string name="pintact_chat_server">chat.pintact.com</string>-->
+    <string name="pintact_chat_server">openfire.pintact.com</string>
+    <!--<string name="pintact_group_chat_server">conference.openfire.pintact.com</string>-->
+    <string name="pintact_group_chat_server">conference.chat.pintact.com</string>
+    <!-- CONNECT Strings -->
+    <string name="TITLE_CONNECT">CONNECT</string>
+    <string name="TITLE_ADD_CONTACT_MANUALLY">ADD MANUALLY</string>
+    <string name="CONNECT_SEARCH_CONTACT">Search for Contact</string>
+    <string name="CONNECT_SEARCH_GROUP_PIN">Search for Group PIN</string>
+    <string name="CONNECT_ADD_CONTACT_MANUALLY">Add Contact Manually</string>
+    <string name="CONNECT_ADD_CONTACT">ADD CONTACT</string>
+    <string name="LABEL_CONTACT_INFO">CONTACT INFO</string>
+
+    <!-- REUSABLE STRINGS (new) -->
+    <string name="NAME">Name</string>
+    <string name="FIRST_NAME">First Name</string>
+    <string name="MIDDLE_INITIAL">Middle Initial</string>
+    <string name="LAST_NAME">Last Name</string>
+    <string name="EMAIL">Email</string>
+    <string name="MOBILE">Mobile</string>
+    <string name="PHONE">Phone</string>
+    <string name="PASSWORD">Password</string>
+    <string name="TITLE">Title</string>
+    <string name="ORGANIZATION">Organization</string>
+    <string name="COMPANY">Company</string>
+    <string name="ADDRESS">Address</string>
+    <string name="ADDRESS_STREET">Street Address</string>
+    <string name="ADDRESS_CITY">City</string>
+    <string name="ADDRESS_STATE">State</string>
+    <string name="ADDRESS_ZIP">Zip</string>
+    <string name="ADD_CONTACT">Type NAME or PIN to begin searching</string>
+    <string name="SIGN_IN">SIGN IN</string>
+    <string name="JOIN_PINTACT">JOIN PINTACT</string>
+    <string name="BUTTON_LETS_FIND_SOME_PINTACTS">LET\'S FIND SOME</string>
+    <string name="PROFILE_SHARED_PROFILES">CURRENTLY SHARED PROFILES</string>
+    <string name="PROFILE_SELECT_PROFILES_TO_SHARED">SELECT THE PROFILES TO SHARE</string>
+    <string name="PROFILE_SELECTED">Selected:</string>
+    <string name="HINT_FIRST_NAME">e.g. Steve</string>
+    <string name="HINT_COUNTRY_CODE">+1</string>
+    <string name="HINT_MOBILE">123-456-7890</string>
+    <string name="HINT_MIDDLE_INITIAL">R</string>
+    <string name="HINT_SHORT_MIDDLE_INITIAL">M.I.</string>
+    <string name="HINT_LAST_NAME">Smith</string>
+    <string name="HINT_EMAIL">steve@gmail.com</string>
+    <string name="HINT_TITLE">e.g. CEO</string>
+    <string name="HINT_ORGANIZATION">e.g. Pintact</string>
+    <string name="HINT_PASSWORD">Password</string>
+    <string name="HINT_EMAIL_ADDRESS">EMAIL ADDRESS</string>
+    <string name="HINT_PROFILE_ENTER_STREET">STREET ADDRESS</string>
+    <string name="HINT_PROFILE_ENTER_CITY">CITY</string>
+    <string name="HINT_PROFILE_ENTER_STATE">STATE</string>
+    <string name="HINT_PROFILE_ENTER_ZIP">ZIP</string>
+    <string name="HINT_PROFILE_ENTER_NOTE">These notes will be visible to your Pintacts</string>
+    <string name="HINT_PROFILE_ENTER_PROFILE_NAME">Work, Home, Business etc.</string>
+    <string name="HINT_PROFILE_ENTER_EMAIL">ENTER EMAIL</string>
+    <string name="HINT_PROFILE_ENTER_PHONE_NUMBER">ENTER PHONE NUMBER</string>
+    <string name="HINT_PROFILE_ENTER_SOCIAL">ENTER SOCIAL NETWORK</string>
+    <string name="HINT_SEARCH_MY_PINTACTS">SEARCH MY PINTACTS</string>
+    <string name="HINT_NO_PINTACTS_YET">You have no Pintacts yet.</string>
+    <string name="NOTES">Notes</string>
+    <string name="NEXT">NEXT</string>
+    <string name="REMOVE">REMOVE</string>
+    <string name="REMOVE_IMAGE">REMOVE IMAGE</string>
+    <string name="CHANGE_IMAGE">CHANGE IMAGE</string>
+    <string name="DELETE">Delete</string>
+    <string name="ADD">ADD</string>
+    <string name="DONE">Done</string>
+    <string name="INVITE">INVITE</string>
+    <string name="CONNECT">CONNECT</string>
+    <string name="EDIT">edit</string>
+    <string name="PERSONAL_NOTES">my notes</string>
+    <string name="PERSONAL_NOTES_HINT">(for your eyes only)</string>
+    <string name="LABEL_EDIT">edit labels</string>
+    <string name="LABEL_AB_TITLE">SELECT NAME</string>
+    <string name="LABEL_SEARCH_NO_RESULTS">No Results</string>
+
+    <string name="PIN_PLACEHOLDER">#</string>
+
+    <string name="ERROR_INPUT_INVALID">Invalid Input!</string>
+    <string name="ERROR_INPUT_INVALID_PASSWORD">8 characters minimum!</string>
+    <string name="DIALOG_MESSAGE_CONTACT_SHARE_UPDATING">Updating Shared Profiles.</string>
+    <string name="DIALOG_MESSAGE_PROFILE_SAVE">Editing Profile Please wait.</string>
+
+    <!-- dialogs -->
+    <string name="generic_error_dialog_title">Error</string>
+    <string name="generic_error_dialog_dismiss">OK</string>
+    <string name="DIALOG_TITLE_FIELD_EMPTY">Field Empty</string>
+    <string name="DIALOG_MESSAGE_NO_NETWORK">No network connection available</string>
+    <string name="DIALOG_MESSAGE_FIELD_EMPTY_LOGIN_FORGOT">Please enter your email</string>
+    <string name="DIALOG_MESSAGE_FIELD_EMPTY_LOGIN">Please enter your email and password</string>
+    <string name="DIALOG_MESSAGE_PLEASE_WAIT">Please wait...</string>
+    <string name="DIALOG_TITLE_SURE">ARE YOU SURE</string>
+    <string name="DIALOG_MESSAGE_DELETE_PROFILE">You are about to delete this profile. This operation cannot be undone. Do you still wish to continue?</string>
+    <string name="DIALOG_TITLE_INVITED">Invite Accepted</string>
+    <string name="DIALOG_MESSAGE_INVITED">You have successfully added a new Pintact.</string>
+    <string name="dialog_invite_sent_title">Invite Sent</string>
+    <string name="dialog_invite_sent_message">Your invite has been sent.  Pintact will notify you when your invite is accepted.</string>
+    <string name="dialog_group_joined_title">Group Joined</string>
+    <string name="dialog_group_joined_message">You have successfully joined the group.</string>
+    <string name="DIALOG_TITLE_REJECT_INVITE">Confirm Rejection</string>
+    <string name="DIALOG_MESSAGE_REJECT_INVITE">Are you sure you want to reject this invitation?</string>
+
+    <string name="DIALOG_TITLE_HIDE_INTRO">Hide?</string>
+    <string name="DIALOG_MESSAGE_HIDE_INTRO">Are you sure you want to hide?</string>
+
+    <string name="dialog_fix_errors_message">Indicated errors must be resolved before save can be performed.</string>
+
+    <!-- Login Register page strings -->
+    <string name="REGISTER_YOUR_INFO">YOUR INFO</string>
+    <string name="REGISTER_BUTTON_ADD_ACCOUNT_IMAGE">ADD ACCOUNT IMAGE</string>
+    <string name="REGISTER_SELECT_AN_OPTION">SELECT AN OPTION</string>
+    <string name="REGISTER_FACEBOOK_OPTION">FACEBOOK</string>
+    <string name="REGISTER_MANUAL_OPTION">Manual</string>
+    <string name="REGISTER_TAP_ADD_AN_IMAGE">TAP TO ADD AN IMAGE</string>
+    <string name="REGISTER_ADD_AN_IMAGE">ADD AN IMAGE</string>
+    <string name="REGISTER_MANUALLY">REGISTER MANUALLY</string>
+
+    <!-- Landing Page -->
+    <string name="already_a_user">ALREADY A USER?</string>
+    <string name="how_pintact_work">HOW PINTACT WORKS</string>
+
+    <!-- Notification Styles -->
+    <string name="nm_invite">INVITES</string>
+    <string name="nm_update">UPDATES</string>
+    <string name="mark_all_as_read">Mark All As Read</string>
+
+    <!-- Label Styles -->
+    <string name="lm_add">new label</string>
+    <string name="lli_labelname">Enter a new label here</string>
+    <string name="lli_delete">DELETE</string>
+    <string name="lm_members">MEMBERS</string>
+    <string name="lm_topics">THREADS</string>
+    <string name="lm_chat">Chat</string>
+    <string name="lm_main_instruct">Use LABELS to organize your Pintacts.  You can create, edit, or delete a label.\n\nTap a label to see its members</string>
+    <string name="lm_edit_instruct">Use LABELS to organize your Pintacts.  You can create, edit, or delete a label.\n\nTap a label to edit it</string>
+
+    <string name="label_actions_dialog_title">Label Actions</string>
+    <string name="label_email_label">Send E-mail to All</string>
+    <string name="label_sms_label">Send Text to All</string>
+
+    <!-- Group Pin Styles -->
+    <string name="gm_msg_top">Use Group PIN to create a digital community with ease.</string>
+    <string name="gm_msg">A Group PIN allows you to create a single PIN for a group of people. Anyone who adds that PIN will automatically receive contact invites from everyone in the group.</string>
+    <string name="gm_new_pin">New Group PIN</string>
+    <string name="gm_new_topic">New Chat Topic</string>
+    <string name="thread_name">THREAD NAME</string>
+    <string name="start_thread">START THREAD</string>
+    <string name="create_new_topic">Create Topic</string>
+    <string name="gm_join_pin">Join Group</string>
+    <string name="gm_name_hint">Tap to enter Name</string>
+    <string name="gm_create">CREATE GROUP</string>
+    <string name="gm_edit">UPDATE GROUP</string>
+    <string name="gm_cancel">CANCEL</string>
+    <string name="gm_pin">GROUP PIN</string>
+    <string name="gm_pin_hint">G1476</string>
+    <string name="gm_name">GROUP NAME</string>
+    <string name="gm_expr">PIN EXPIRATION</string>
+    <string name="gm_select_profile">SELECT PROFILES TO SHARE</string>
+    <string name="gm_msg_title">PERSONALIZE MESSAGE</string>
+    <string name="gm_msg_hint">Join me in the future of Contact Management!</string>
+    <string name="gm_preview">PREVIEW SHARE</string>
+    <string name="gm_share">SHARE</string>
+    <string name="gmn_tab1">Group Created</string>
+    <string name="gmn_tab2">Group Joined</string>
+    <string name="gil_count">1</string>
+    <string name="gil_expdate">Exp</string>
+    <string name="group_tour_create">Create Your First Group PIN</string>
+    <string name="group_tour_cancel">Not now</string>
+    <string name="group_automatic_description">Contact info is automatically inserted into each member\'s address book</string>
+    <string name="group_manual_description">Members choose who to add to their address book manually from the group</string>
+    <string name="group_moderate_yes_description">You as the moderator must approve or reject any group applicant</string>
+    <string name="group_moderate_no_description">Members join the group automatically by searching for its PIN and sharing a profile</string>
+    <string-array name="group_time_options">
+        <item>1 DAY (24 HOURS)</item>
+        <item>2 DAYS</item>
+        <item>3 DAYS</item>
+        <item>1 WEEK</item>
+        <item>2 WEEKS</item>
+        <item>3 WEEKS</item>
+        <item>1 MONTH</item>
+    </string-array>
+
+    <string name="group_create_confirm_head">CONGRATULATIONS</string>
+    <string name="group_create_confirm_subhead">ON CREATING A GROUP PIN</string>
+    <string name="group_create_confirm_share_instructions">Tap PIN to share</string>
+    <string name="group_create_confirm_message">Your Group PIN can now be used to connect everyone in your group.</string>
+    <string name="group_create_confirm_footer">Pintact - The future of contact management.</string>
+
+    <string name="group_share_dialog_title">Share via</string>
+    <string name="group_share_email_subject">Please Join This Group On Pintact</string>
+    <string name="group_share_email_body">Please join me on Pintact.\nEnter this Group PIN: %1$s (pintact://%1$s)\nTo join: %2$s\nPIN Expires: %3$s\nDownload Pintact from AppStore or Google Play store or visit https://pintact.com\n\nThanks. See you on Pintact!</string>
+    <string name="group_share_sms_body">Please join me on Pintact.\nEnter this Group PIN: %1$s (pintact://%1$s)\nTo join: %2$s\nPIN Expires: %3$s\nDownload Pintact from AppStore or Google Play store or visit https://pintact.com\n\nThanks. See you on Pintact!</string>
+
+    <string name="group_actions_dialog_title">Group Actions</string>
+    <string name="group_edit_label">Edit Group PIN</string>
+    <string name="group_email_label">Send E-mail to All</string>
+    <string name="group_sms_label">Send Text to All</string>
+    <string name="group_share_email_label">Share via E-mail</string>
+    <string name="group_share_sms_label">Share via Text</string>
+    <string name="group_broadcast_label">Send a Broadcast Text</string>
+    <string name="group_broadcast_dialog_title">Broadcast Message</string>
+
+    <string name="send_text_button_label">Send</string>
+
+    <!-- Pintroduction -->
+    <string name="pintroduction_message">Dear %1$s and %2$s, I would like to introduce you to each other. I think you should connect on Pintact! - %3$s</string>
+
+    <!-- Group action feedback -->
+    <string name="gm_no_profile_title">No Profile Selected</string>
+    <string name="gm_no_profile_detail">Please select at least one profile to share</string>
+
+    <!-- Searching Setting Styles -->
+    <string name="ss_yes">YES, LET\'S ADJUST THAT NOW</string>
+    <string name="ss_no">NO, LET\'S DO THAT LATER</string>
+    <string name="ss_desc">Would like to adjust how people search for you on Pintact?</string>
+    <string name="ss_contact">Type NAME or PIN to begin searching</string>
+
+    <!-- Invite Page Styles -->
+    <string name="im_msg_title">PERSONALIZE MESSAGE</string>
+    <string name="im_msg">I would like to invite you to join Pintact-a new way to manage your addressbook. With Pintact you create a unique PIN that you can share with contacts to help find you within the Pintact world. Once found, you can connect with your contact by exchanging contact info profiles. Then if either you or your contact update your profiles, the other party automatically receives the updated information. Isn\'t that neat? \n\n I\'m already a part of the Pintact Universe and want you to join as well. Hope to connect with you soon!</string>
+    <string name="im_all">Select all</string>
+    <string name="im_none">Unselect all</string>
+    <string name="im_send">SEND INVITES</string>
+    <string name="im_send_intro">SEND INTRODUCTION</string>
+    <string name="im_invite">Invite</string>
+    <string name="im_skip">Skip</string>
+
+    <!-- Success New Profile Styles -->
+    <string name="pcs_nice">NICE! YOU\'VE MADE</string>
+    <string name="pcs_nice_next">YOUR FIRST PROFILE</string>
+    <string name="pcs_desc_first">You can create more profiles from the Profiles dashboard.</string>
+    <string name="pcs_desc_second">Now let\'s set up how you want to be searchable in Pintact.</string>
+
+    <!-- New Profile Styles -->
+
+    <string name="pcn_add_phone">add phone number</string>
+    <string name="pcn_add_email">add email address</string>
+    <string name="pcn_add_addr">add physical address</string>
+    <string name="pcn_add_url">add urls and social</string>
+    <string name="pcn_add_label">assign a label to this contact</string>
+    <string name="edit_label">edit label</string>
+    <string name="pcn_label_pnotes">Personal Notes</string>
+    <string name="pcn_label_url">Twitter</string>
+    <string name="pcn_delete_contact">DELETE CONTACT</string>
+    <string name="pcn_delete_profile">DELETE PROFILE</string>
+    <string name="pcn_add_contact">ADD TO ADDRESS BOOK</string>
+    <string name="pcn_field_name">Field Name</string>
+    <string name="pcn_field_value">FIELD VALUE</string>
+    <string name="SPINNER_CREATE_PROFILE_PROMPT">SELECT NAME</string>
+
+
+    <string name="LABEL_ADD_CUSTOM_LABEL">add custom label</string>
+    <string name="HINT_ADD_NEW_LABEL">LABEL NAME</string>
+    <integer name="ARRAY_CREATE_PROFILE_LABEL_DEFAULT">0</integer>
+
+    <string-array name="ARRAY_CREATE_PROFILE_LABEL">
+        <item>Family</item>
+        <item>Favorites</item>
+        <item>Friends</item>
+    </string-array>
+
+    <integer name="ARRAY_CREATE_PROFILE_EMAIL_DEFAULT">0</integer>
+
+    <string-array name="ARRAY_CREATE_PROFILE_EMAIL">
+        <item>Email</item>
+        <item>Personal</item>
+        <item>Work</item>
+        <item>Private</item>
+    </string-array>
+
+    <integer name="ARRAY_CREATE_PROFILE_PHONE_DEFAULT">3</integer>
+
+    <string-array name="ARRAY_CREATE_PROFILE_PHONE">
+        <item>Home</item>
+        <item>Home Fax</item>
+        <item>iPhone</item>
+        <item>Mobile</item>
+        <item>Phone</item>
+        <item>Work</item>
+        <item>Work Fax</item>
+    </string-array>
+
+    <integer name="ARRAY_CREATE_PROFILE_ADDRESS_DEFAULT">0</integer>
+
+    <string-array name="ARRAY_CREATE_PROFILE_ADDRESS">
+        <item>Home</item>
+        <item>Office</item>
+    </string-array>
+
+    <integer name="ARRAY_CREATE_PROFILE_SOCIAL_DEFAULT">2</integer>
+
+    <string-array name="ARRAY_CREATE_PROFILE_SOCIAL">
+        <item>AIM</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>LinkedIn</item>
+        <item>Pintact</item>
+        <item>Quora</item>
+        <item>Skype</item>
+    </string-array>
+
+    <!-- slide image arrays -->
+    <array name="ARRAY_TOUR_HOW_PINTACT_WORKS">
+        <item>@drawable/tourhiw01</item>
+        <item>@drawable/tourhiw02</item>
+        <item>@drawable/tourhiw03</item>
+        <item>@drawable/tourhiw04</item>
+        <item>@drawable/tourhiw05</item>
+    </array>
+    <array name="ARRAY_TOUR_GROUP_PIN">
+        <item>@drawable/tourgroup01</item>
+        <item>@drawable/tourgroup02</item>
+        <item>@drawable/tourgroup03</item>
+        <item>@drawable/tourgroup04</item>
+    </array>
+    <array name="ARRAY_SLIDE_START">
+        <item>@drawable/slide01</item>
+        <item>@drawable/slide02</item>
+        <item>@drawable/slide03</item>
+        <item>@drawable/slide04</item>
+        <item>@drawable/slide05</item>
+        <item>@drawable/slide06</item>
+    </array>
+
+    <!-- Left Deck Menu Styles -->
+    <string name="ldm_add_pintact">ADD PINTACT</string>
+    <string name="ldm_contact">Pintacts</string>
+    <string name="ldm_group">Group PIN</string>
+    <string name="ldm_label">Labels</string>
+    <string name="ldm_notify">Notifications</string>
+    <string name="ldm_profile">Profiles</string>
+    <string name="ldm_setting">Settings</string>
+
+    <!-- First Login Page -->
+    <string name="login_pin_email">PIN OR EMAIL</string>
+    <string name="login_pwd">PASSWORD</string>
+    <string name="login_login">LOG IN</string>
+    <string name="login_logout">LOG OUT</string>
+    <string name="login_forgot_pwd">FORGOT PASSWORD?</string>
+    <string name="login_register_text">NO PIN YET? REGISTER</string>
+    <string name="login_no_pin_yet">NO PIN YET?</string>
+    <string name="login_register">REGISTER</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_navigation_drawer">Left Deck Menu</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="imageDesc">Image Description</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="search_button">Go</string>
+    <string name="ppl_text_view">PEOPLE</string>
+    <string name="search_list_view">Barack Obama</string>
+    <string name="left_deck_notify">Notifications</string>
+    <string name="left_deck_group">Group PIN</string>
+    <string name="left_deck_label">Labels</string>
+    <string name="left_deck_label1">friends</string>
+    <string name="left_deck_label2">Yale 2012</string>
+    <string name="left_deck_label3">Add Label</string>
+    <string name="left_deck_profile">Profiles</string>
+    <string name="left_deck_setting">Settings</string>
+    <string name="dummy"></string>
+    <string name="initial">WW</string>
+    <string name="profile_name">Barack Obama</string>
+    <string name="profile_title">President\nUnited States</string>
+    <string name="profile_group">USA1234</string>
+    <string name="noti_detail_update_from">UPDATE FROM</string>
+    <string name="noti_detail_associate_group_pin">ASSOCIATED GROUP PIN</string>
+    <string name="noti_detail_update_details">UPDATE DETAILS</string>
+    <string name="noti_detail_when">WHEN</string>
+    <string name="noti_title_update">UPDATE</string>
+    <string name="noti_title_pinivite">PINVITES</string>
+    <string name="noti_title_pintroduction">PINTRODUCTIONS</string>
+    <string name="noti_title_accepted">ACCEPTED</string>
+    <string name="noti_detail_invitation_from">INVITATION FROM</string>
+    <string name="noti_detail_message_from">MESSAGE FROM</string>
+    <string name="noti_detail_introduced_by">INTRODUCED BY</string>
+    <string name="noti_detail_introduced_to">INTRODUCED TO</string>
+    <string name="noti_detail_personal_message">PERSONAL MESSAGE - TAP TO EDIT</string>
+    <string name="noti_join_me_text">Join me in the future of Contact Management!</string>
+    <string name="noti_list_updates">UPDATES</string>
+    <string name="noti_list_pinvites">PINVITES</string>
+    <string name="invite_dialog_header">Invite contact via</string>
+
+    <!-- Native communication methods -->
+    <string name="comm_sms">SMS</string>
+    <string name="comm_email">E-Mail</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="no_comm_available_error_title">Error</string>
+    <string name="no_comm_available_error_message">Selected contact doesn\'t have an email or mobile number stored.  Please add a valid email or mobile number and try again.</string>
+    <string name="no_comm_available_dismiss">OK</string>
+
+    <!-- Default invite messages -->
+    <string name="invite_email_subject">Connect with me on Pintact</string>
+    <string name="invite_email_body">Dear %1$s,&lt;br>\nPlease join me in the future of Contact Management. Download &lt;a href=www.pintact.com>Pintact&lt;/a> from the Apple store or Google Play store. Once you register, Please add me add as a contact. My PIN is %2$s.&lt;br>\nSee you on Pintact!. &lt;br>\nRegards,&lt;br>\n%3$s</string>
+    <string name="invite_sms">Dear %1$s,\nPlease join me in the future of Contact Management. Download Pintact from the Apple store or Google Play store. Once you register, Please add me add as a contact. My PIN is %2$s.\nSee you on Pintact!.\nRegards,\n%3$s</string>
+
+    <!-- Setting page styles -->
+    <string name="set_contact_sync">USER INFORMATION</string>
+    <string name="set_sort">Sort Settings</string>
+    <string name="ab_sort_settings">SORT SETTINGS</string>
+    <string name="search_setting_info_text">You are searchable in Pintact by the fields below. Pintacts are always searchable by their exact PIN.</string>
+    <string name="about_setting_info_text">Pintact truly represents a new era in contact information management - the first \"social utility\" as we like to call it.\n\nThe Pintact app was specifically designed with three main goals in mind:\n\n• Making personal and business contact data entry and exchange effortless.\n• Putting each individual or business in complete control of their own contact information.\n• Keeping your ever expanding contact data automatically up to date.\n\nWe achieve these goals through a unique PIN mechanism and allowing each Pintact member to determine what information he or she wants to share and with whom. Also, with our novel \"Pintroduce\" and \"Group PIN\" features, Pintact makes exchanging contact information between many individuals at a time incredibly simple, fast and accurate. Ease, security and reliability that\'s what Pintact is all about!</string>
+    <string name="search_setting_change_image">CHANGE</string>
+    <string name="search_setting_remove_image">REMOVE</string>
+    <string name="change_password_title">Please enter your old and new password to apply change. The new password must contain at least 8 characters.</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="change_password_button">CHANGE PASSWORD</string>
+    <string name="password_too_short_error">Password must be at least 8 characters</string>
+    <string name="old_password_hint">Current Password</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="about_setting_faq">FAQ</string>
+    <string name="about_setting_terms">Terms &amp; Conditions</string>
+    <string name="about_setting_privacy">Privacy Policy</string>
+    <string name="search_setting_status">SEARCH STATUS</string>
+    <string name="set_search_setting_save">Save</string>
+    <string name="set_search_setting">Account Settings</string>
+    <string name="set_search_setting_privacy_text">List Me in Search Results</string>
+    <string name="set_search_setting_image_text">Add photo for search results</string>
+    <string name="set_search_setting_search_field_header">SEARCHABLE FIELDS</string>
+    <string name="set_search_setting_search_field_pin">PIN</string>
+    <string name="set_search_setting_search_field_fname">First Name</string>
+    <string name="set_search_setting_search_field_lname">Last Name</string>
+    <string name="set_search_setting_search_field_title">Title</string>
+    <string name="set_search_setting_search_field_title_hint">i.e. CEO</string>
+    <string name="set_search_setting_search_field_company">Company</string>
+    <string name="set_search_setting_search_field_company_hint">i.e. Pintact</string>
+    <string name="set_search_setting_search_field_city">City</string>
+    <string name="set_search_setting_search_field_city_hint">i.e. New York City</string>
+    <string name="set_search_setting_search_field_state">State</string>
+    <string name="set_search_setting_search_field_state_hint">i.e. New York</string>
+    <string name="set_change_password">Change Password</string>
+    <string name="set_security">SETTINGS</string>
+    <string name="set_broadcast">Show Native Contacts</string>
+    <string name="set_search_set">Push Notifications</string>
+    <string name="set_support">GENERAL</string>
+    <string name="set_policy">Email Support</string>
+    <string name="set_about">About</string>
+    <string name="set_invite">Invite a Friend</string>
+    <string name="set_feedback">Feedback</string>
+    <string name="set_arrow">></string>
+    <string name="set_sort1">SORT BY FIRST NAME</string>
+    <string name="set_sort2">SORT BY LAST NAME</string>
+    <string name="set_sort_setting">Pintact.Settings.Sort</string>
+    <string name="set_show_native_contacts">Pintact.Settings.Local.Contacts</string>
+    <string name="set_push_notifications">Pintact.Settings.Push.Notifications</string>
+    <string name="login_username">Pintact.Login.UserName</string>
+    <string name="login_user">Pintact.Login.User</string>
+    <string name="login_password">Pintact.Login.PassWord</string>
+    <string name="access_token">Pintact.Login.AccessToken</string>
+    <!--
+    <string name="set_arrow">
+        <![CDATA[<b>&gt</b>]]>
+    </string>
+    -->
+
+
+    <!-- Login Register Success page styles -->
+
+    <string name="lrs_new_pin">YOUR NEW PIN:</string>
+    <string name="lrs_pin">XXX1234</string>
+    <string name="lrs_description">Use your unique PIN to easily and securely share your contact information with other Pintacts.</string>
+
+    <!-- Login Register Pin page strings -->
+    <string name="lrpin_text">Create an easy to share and easy to remember PIN:</string>
+    <string name="lrp_suggest_pin">SUGGEST A PIN</string>
+    <string name="lrp_join">Join</string>
+    <string name="lrp_desc">Your unique PIN must contain 7 characters.\nYour initials plus 4 or 5 digits.\n For Example: abc1234 or ab12345</string>
+    <string name="lrp_desc_success">Congrats! PIN is available.\nTap "Join" to continue.</string>
+    <string name="lrp_desc_fail">Chosen PIN is unavailable.\nTry a new PIN or tab "Suggest a Pin"</string>
+
+    <!-- Login Forgot page strings -->
+    <string name="lf_send_button">SEND RESET INSTRUCTIONS</string>
+    <string name="lf_success">Reset instructions have been sent.</string>
+    <string name="lf_info_title">ENTER YOUR EMAIL TO RESET YOUR PASSWORD</string>
+    <string name="lf_info">Password reset instructions will be sent to your credentials above</string>
+
+    <!-- Action Bar strings -->
+    <string name="action_bar_option">NEXT</string>
+    <string name="ab_forgot">FORGOT PASSWORD</string>
+    <string name="ab_register">REGISTER</string>
+    <string name="ab_register_success">CONGRATULATIONS</string>
+    <string name="ab_profile">PROFILE</string>
+    <string name="ab_pin">CREATE A PIN</string>
+    <string name="ab_setting">SETTINGS</string>
+    <string name="ab_new_profile">CREATE A PROFILE</string>
+    <string name="ab_new_profile_success">MAIN</string>
+    <string name="ab_invite_all">INVITE FRIENDS</string>
+    <string name="ab_contact_all">ALL CONTACTS</string>
+    <string name="ab_invite_add">ADD A CONTACT</string>
+    <string name="ab_search_person">SEARCH PERSON</string>
+    <string name="ab_group_pin">MY GROUPS</string>
+    <string name="ab_label">LABELS</string>
+    <string name="ab_notify">NOTIFICATIONS</string>
+    <string name="ab_edit">Edit</string>
+    <string name="ab_new">NEW</string>
+    <string name="ab_done">Done</string>
+    <string name="ab_accept">ACCEPT</string>
+    <string name="ab_invite">INVITE</string>
+    <string name="ab_cancel">HIDE</string>
+    <string name="ab_group_info">ADD GROUP</string>
+    <string name="ab_group_edit">EDIT GROUP</string>
+    <string name="ab_group_add">ADD FRIEND</string>
+    <string name="ab_join_group">JOIN GROUP</string>
+    <string name="ab_group_created">GROUP PIN CREATED</string>
+    <string name="ab_pintroduce">PINTRODUCE</string>
+    <string name="ab_pintroduce_message">Pintroduction Message</string>
+    <string name="ab_congratulations">CONGRATULATIONS</string>
+    <string name="AB_JOIN">Join</string>
+    <string name="pintact_manage_note">This address book entry is managed by PINTACT.Please note that any changes to this entry will be lost if/when this contact updates their Pintact profile.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_unshare">Confirm Unshare</string>
+    <string name="confirm_unshare_desc">You are about to unshare all your profiles with </string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="title_activity_activity_select_label">ActivitySelectLabel</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <string name="title_activity_chat_image_full_screen">ChatImageFullScreenActivity</string>
+    <string name="title_activity_create_group">CreateGroupActivity</string>
+    <string name="title_activity_login_register_options">LoginRegisterOptionsActivity</string>
+
+    <string name="configuration_error">Error: the value of WEB_CLIENT_ID or SERVER_BASE_URL is not  set correctly. This will cause errors when requesting a server auth code.</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    <string name="title_activity_login_connect">LoginConnectActivity</string>
+    <string name="title_activity_login_network">LoginNetworkActivity</string>
+    <string name="title_activity_group_invite">GroupInviteActivity</string>
+    <string name="title_activity_push_notification">PushNotificationActivity</string>
+</resources>

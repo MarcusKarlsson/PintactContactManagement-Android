@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <solid android:color="@color/PINTACT_TRANSPARENT_COLOR" />
+            <stroke android:width="@dimen/PINTACT_LINE_HEIGHT" android:color="@color/PINTACT_VIEW_BG_COLOR" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <solid android:color="@color/PINTACT_TRANSPARENT_COLOR" />
+            <stroke android:width="@dimen/PINTACT_LINE_HEIGHT" android:color="@color/PINTACT_VIEW_BG_COLOR" />
+            <corners android:radius="@dimen/PINTACT_PROFILE_PICTURE_PADDING" />
+        </shape>
+    </item>
+
+    <item android:left="@dimen/PINTACT_LINE_HEIGHT" android:right="@dimen/PINTACT_LINE_HEIGHT" android:bottom="@dimen/PINTACT_LINE_HEIGHT" android:top="@dimen/PINTACT_LINE_HEIGHT">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+            <solid android:color="@color/PINTACT_TRANSPARENT_COLOR" />
+            <stroke android:width="@dimen/PINTACT_LINE_HEIGHT" android:color="@color/PINTACT_DARKGRAY_COLOR" />
+            <corners android:radius="@dimen/PINTACT_PROFILE_PICTURE_PADDING" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contact_intro_view"
+    android:background="@color/login_congrats_bg" >
+    
+    <TextView
+        android:id="@+id/gps_msg_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/gm_msg_title"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/im_padding_10dp"
+        android:layout_marginStart="@dimen/im_padding_10dp"
+        android:textColor="@color/lf_text"
+        android:textSize="18sp"
+        />
+    
+    <EditText
+        android:id="@+id/gps_msg_cont"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/gps_msg_title"
+        android:layout_marginBottom="@dimen/login_btn_margin_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="@dimen/im_padding_10dp"
+        android:paddingRight="@dimen/im_padding_10dp"
+        android:lines="4"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:text="@string/gm_msg_hint"
+        android:textColor="@color/PINTACT_TEXT_HINT_COLOR"
+        android:textStyle="italic"
+        android:background="@color/PINTACT_WHITE_COLOR"
+        />
+    
+    <TextView style="@style/BigOrangeButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/im_padding_10dp"
+        android:textSize="@dimen/csl_small"
+        android:layout_below="@+id/gps_msg_cont"
+        android:text="@string/im_send_intro"
+	    android:id="@+id/gm_preview" 
+        />
+    
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pintact_white_rect_with_2_lines"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLabel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/icon_minus_red"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL" />
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/textViewEntryTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/PHONE"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/PINTACT_BLUE_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_LARGE"
+            android:textStyle="bold"
+            android:gravity="left"
+            app:FontStyles="normal|bold"
+            android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewChooserCheck"
+            android:src="@drawable/pin_check_empty"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+            android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+    </LinearLayout>
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewDeleteLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/pintact_round_red_rect"
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        android:text="@string/DELETE"
+        android:textColor="@color/PINTACT_WHITE_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_LARGE"
+        android:textStyle="bold"
+        android:gravity="left"
+        app:FontStyles="normal|bold"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

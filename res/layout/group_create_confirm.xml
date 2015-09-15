@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_create_confirm_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/pintact_round_orange_rect">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textSize="@dimen/TEXT_SIZE_XTRA_LARGE"
+            android:text="@string/group_create_confirm_head" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            android:layout_margin="3dp"
+            android:textSize="@dimen/TEXT_SIZE_LARGE"
+            android:text="@string/group_create_confirm_subhead" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            android:layout_margin="3dp"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:textStyle="italic"
+            android:text="@string/group_create_confirm_share_instructions" />
+        <TextView
+            android:id="@+id/group_create_confirm_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:gravity="center"
+           	android:background="@drawable/pintact_round_white_rect"
+           	android:textSize="@dimen/TEXT_SIZE_XTRA_LARGE"
+           	android:text="@string/dummy" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:text="@string/group_create_confirm_message" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PINTACT_WHITE_COLOR"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:textStyle="italic"
+            android:text="@string/group_create_confirm_footer" />
+    </LinearLayout>
+</RelativeLayout>

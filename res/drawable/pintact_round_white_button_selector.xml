@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">   
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	       <!--  <padding android:left="15dp" android:right="15dp"/> -->  
+	       <solid android:color="@color/PINTACT_VIEW_BG_COLOR" />
+	       <stroke android:width="@dimen/PINTACT_LINE_HEIGHT" android:color="@android:color/white" />
+	       <corners android:radius="4dp" />
+		</shape>
+    </item> 
+    <item> 
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	    <!--  <padding android:left="15dp" android:right="15dp"/> -->  
+	       <solid android:color="@color/PINTACT_WHITE_COLOR" />
+	       <stroke android:width="@dimen/PINTACT_LINE_HEIGHT" android:color="@android:color/white" />
+	       <corners android:radius="4dp" />
+		</shape>
+    </item><!-- default -->
+</selector>

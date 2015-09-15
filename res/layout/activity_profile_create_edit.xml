@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/PINTACT_VIEW_BG_COLOR"
+    android:id="@+id/profile_edit_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.pinplanet.pintact.utility.EditTextTypeFace
+            android:id="@+id/pcn_profile_name"
+            style="@style/BigEditTextStyle"
+            android:inputType="textPersonName|textCapWords"
+            android:hint="@string/HINT_PROFILE_ENTER_PROFILE_NAME"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+            app:FontStyles="bold" />
+
+
+        <!-- Add image and name info -->
+        <RelativeLayout
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pcn_profile_name"
+            android:id="@+id/pcn_add_image_lo"
+            android:layout_marginTop="@dimen/profile_new_top">
+
+            <RelativeLayout
+                android:id="@+id/pcn_add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onUploadProfImage"
+                android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL">
+
+                <com.pinplanet.pintact.utility.TextViewTypeFace
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:text="@string/REGISTER_ADD_AN_IMAGE"
+                    android:textColor="@color/PINTACT_TEXT_HINT_COLOR"
+                    android:textSize="@dimen/TEXT_SIZE_LARGE"
+                    app:FontStyles="bold"
+                    android:layout_alignBottom="@+id/imageViewAdd"
+                    android:layout_alignRight="@+id/imageViewAdd"
+                    android:layout_alignLeft="@+id/imageViewAdd"
+                    android:gravity="center"
+                    android:padding="@dimen/PINTACT_ITEM_PADDING" />
+
+                <ImageView
+                    android:id="@+id/imageViewAdd"
+                    android:layout_width="@dimen/pcn_image_size"
+                    android:layout_height="@dimen/pcn_image_size"
+                    android:padding="@dimen/PINTACT_PROFILE_PICTURE_PADDING"
+                    android:contentDescription="@null"
+                    android:src="@drawable/add_an_image_no_text"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/pcn_image_size"
+                    android:layout_height="@dimen/pcn_image_size"
+                    android:src="@drawable/pintact_profile_picture_frame"/>
+
+
+                <FrameLayout
+                    android:layout_width="@dimen/pcn_image_size"
+                    android:layout_height="@dimen/pcn_image_size"
+                    android:padding="@dimen/PINTACT_PROFILE_PICTURE_PADDING">
+                    <View android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pintact_round_transparent_rect_with_border"
+                        />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+
+            
+	        <RelativeLayout
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/pcn_add_image"
+                android:layout_alignTop="@+id/pcn_add_image"
+                android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+                android:gravity="center_vertical"
+
+                android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL">
+
+                <LinearLayout
+                    android:id="@+id/itemLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true">
+
+                    <com.pinplanet.pintact.utility.EditTextTypeFace
+                        android:id="@+id/pcn_first_name"
+                        style="@style/ProfileEditTextStyle"
+                        android:hint="@string/FIRST_NAME"
+                        app:FontStyles="normal"
+                        android:layout_width="0dp"
+                        android:inputType="textPersonName|textCapWords"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7" />
+
+                    <View
+                        android:layout_width="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+                        android:layout_height="1dp" />
+
+                    <com.pinplanet.pintact.utility.EditTextTypeFace
+                        android:id="@+id/pcn_middle_name"
+                        style="@style/ProfileEditTextStyle"
+                        android:hint="@string/HINT_SHORT_MIDDLE_INITIAL"
+                        app:FontStyles="normal"
+                        android:inputType="textPersonName|textCapWords"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        />
+                </LinearLayout>
+
+                <com.pinplanet.pintact.utility.EditTextTypeFace
+                    android:id="@+id/pcn_last_name"
+                    style="@style/ProfileEditTextStyle"
+                    android:layout_below="@+id/itemLayout"
+                    android:layout_width="fill_parent"
+                    android:hint="@string/LAST_NAME"
+                    app:FontStyles="normal"
+                    />
+
+                <com.pinplanet.pintact.utility.EditTextTypeFace
+                    android:id="@+id/pcn_title"
+                    style="@style/ProfileEditTextStyle"
+                    android:inputType="textPersonName|textCapWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pcn_last_name"
+                    android:maxLines="2"
+                    android:hint="@string/TITLE"
+                    app:FontStyles="normal"
+                    />
+
+                <com.pinplanet.pintact.utility.EditTextTypeFace
+                    android:id="@+id/pcn_company"
+                    style="@style/ProfileEditTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/pcn_title"
+                    android:maxLines="2"
+                    android:hint="@string/COMPANY"
+                    android:inputType="textPersonName|textCapWords"
+                    app:FontStyles="normal"
+                    />
+
+	      	</RelativeLayout>
+        </RelativeLayout>
+
+
+    <!-- NEW LAYOUT -->
+
+    <de.late.gui.ExpandableListViewAdvanced
+        android:id="@+id/listViewPhone"
+        android:layout_below="@+id/pcn_add_image_lo"
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        tools:listfooter="@layout/list_view_profile_footer"
+        tools:listitem="@layout/list_view_profile_item_edit_default" />
+
+    <de.late.gui.ExpandableListViewAdvanced
+        android:id="@+id/listViewEmail"
+        android:layout_below="@+id/listViewPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:groupIndicator="@null"
+        tools:listfooter="@layout/list_view_profile_footer"
+        tools:listitem="@layout/list_view_profile_item_edit_default"/>
+
+    <de.late.gui.ExpandableListViewAdvanced
+        android:id="@+id/listViewAddress"
+        android:layout_below="@+id/listViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:groupIndicator="@null"
+        tools:listfooter="@layout/list_view_profile_footer"
+        tools:listitem="@layout/list_view_profile_item_edit_address"/>
+
+    <de.late.gui.ExpandableListViewAdvanced
+        android:id="@+id/listViewSozial"
+        android:layout_below="@+id/listViewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:groupIndicator="@null"
+        tools:listfooter="@layout/list_view_profile_footer"
+        tools:listitem="@layout/list_view_profile_item_edit_default"/>
+
+    <LinearLayout
+        android:id="@+id/layoutNotes"
+        android:orientation="vertical"
+        android:layout_below="@+id/listViewSozial"
+        android:layout_width="fill_parent"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:layout_marginBottom="@dimen/PINTACT_MARGIN_VIEW_VERTICAL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:padding="@dimen/PINTACT_ITEM_PADDING"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/imageViewHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_notes"
+                android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/notesEntryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/NOTES"
+            android:textColor="@color/PINTACT_BLUE_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+            android:drawablePadding="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+            android:gravity="left"
+            app:FontStyles="normal|bold"
+            android:layout_marginTop="@dimen/PINTACT_ITEM_PADDING" />
+
+        <com.pinplanet.pintact.utility.EditTextTypeFace
+            android:id="@+id/notesTextEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+            android:textColor="@color/PINTACT_TEXT_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:gravity="left"
+            app:FontStyles="normal"
+            android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+            android:hint="@string/HINT_PROFILE_ENTER_NOTE" />
+
+    </LinearLayout>
+
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/buttonDeleteProfile"
+        style="@style/BigOrangeButtonStyle"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:clickable="true"
+        android:layout_below="@+id/layoutNotes"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pcn_delete_profile"
+        app:FontStyles="bold"
+        android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>

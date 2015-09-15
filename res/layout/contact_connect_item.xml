@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    android:background="@drawable/pintact_selector_list_item_pintact"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:layout_height="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:background="@null"
+        >
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/textViewInitial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_XTRA_LARGE"
+            android:textStyle="normal"
+            android:lines="1"
+            android:maxLines="1"
+            android:background="@null"
+            app:FontStyles="normal"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageViewPicture"
+            android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING"
+            android:src="@drawable/connect_search_contact"
+            android:scaleType="fitCenter" />
+
+
+    </FrameLayout>
+
+    <!-- can be invite or add -->
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/PINTACT_TEXT_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_LARGE"
+        android:lines="1"
+        android:maxLines="1"
+        android:background="@null"
+        app:FontStyles="normal"
+        android:ellipsize="end"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL" />
+
+    <ImageView
+        android:padding="@dimen/PINTACT_ITEM_PADDING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_right"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL"
+        android:layout_marginEnd="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL" />
+
+
+</LinearLayout>

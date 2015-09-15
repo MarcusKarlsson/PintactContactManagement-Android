@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/PINTACT_VIEW_BG_COLOR"
+              android:orientation="vertical"
+              tools:context="com.pinplanet.pintact.login.LoginConnectActivity">
+
+    <TextView
+        android:id="@+id/connectTopTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Connect to your networks to stay connected with the people that matter"/>
+
+    <LinearLayout
+        android:id="@+id/FacebookLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_ITEM_PADDING"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/facebookConnectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/connect_facebook"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:onClick="connectFacebookClicked"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/facebookFriendCountTextView"
+            android:visibility="gone"
+            android:textColor="@color/PINTACT_BLUE_COLOR"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/GoogleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pintact_white_rect_with_2_lines"
+        android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_ITEM_PADDING"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/googleConnectButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/connect_google"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:onClick="connectGoogleClicked"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/googleFriendCountTextView"
+            android:visibility="gone"
+            android:textColor="@color/PINTACT_BLUE_COLOR"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pintact_round_white_rect"
+        android:gravity="center"
+        android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+        android:paddingTop="@dimen/PINTACT_ITEM_PADDING"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_round_orange_rect"
+            android:padding="1dp"
+            >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/connectNextButton"
+                style="@style/ButtonStyle"
+                android:layout_width="100dp"
+                android:background="@drawable/pintact_round_white_rect"
+                android:clickable="true"
+                android:text="@string/NEXT"
+                android:textColor="@color/PINTACT_ORANGE_COLOR"
+                android:textStyle="bold"
+                android:onClick="connectNextClicked"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

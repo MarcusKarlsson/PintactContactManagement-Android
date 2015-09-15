@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SettingMainActivity" >
+
+        <LinearLayout
+            android:id="@+id/logoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.3" />
+
+                <ImageView
+                    android:id="@+id/imageViewLogo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.4"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bg_logo" />
+
+                <View
+                    android:id="@+id/View2"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+       <View
+           android:id="@+id/line"
+           android:layout_width="160dp"
+           android:layout_height="@dimen/PINTACT_LINE_HEIGHT"
+           android:layout_below="@id/logoLayout"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="30dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="30dp"
+           android:background="@color/PINTACT_WHITE_COLOR" />
+        
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/buttonRegister"
+            style="@style/BigButtonStyle"
+            android:layout_below="@id/line"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pintact_round_white_button_selector"
+            android:onClick="onRegister"
+            android:text="@string/login_register"
+            android:textColor="@color/PINTACT_ORANGE_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_LARGE"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:FontStyles="normal|bold" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayoutAlreadyUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:onClick="onLogin"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/alreadyUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/already_a_user"
+                android:textColor="@color/PINTACT_WHITE_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_SMALL"
+                android:textStyle="italic"
+                app:FontStyles="light|italic" />
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/TextViewTypeFace01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/arrow"
+                android:text="@string/login_login"
+                android:textColor="@color/PINTACT_WHITE_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_SMALL"
+                app:FontStyles="light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/buttonLayoutAlreadyUser"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/PINTACT_LINE_HEIGHT"
+            android:layout_marginBottom="2dp"
+            android:background="@color/PINTACT_WHITE_COLOR" />
+
+        <LinearLayout
+            android:id="@+id/layoutButtonHowPintactWorks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onHowPintactWorks"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <ImageView
+                android:id="@+id/imageViewHowPintatcWorks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:cropToPadding="false"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:src="@drawable/icon_exclamation" />
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/TextViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_pintact_work"
+                android:textColor="@color/PINTACT_WHITE_COLOR" 
+                android:textSize="@dimen/TEXT_SIZE_SMALL"
+                app:FontStyles="bold|italic" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/PINTACT_LINE_HEIGHT"
+            android:layout_marginTop="2dp"
+            android:background="@color/PINTACT_WHITE_COLOR" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

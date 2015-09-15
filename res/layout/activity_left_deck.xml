@@ -1,0 +1,143 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LeftDeckTableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LeftDeckActivity" >
+
+    <TableRow
+        android:id="@+id/ToptableRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/TopButton"
+            android:layout_width="wrap_content"
+            android:onClick="searchButtonClicked"
+            android:text="@string/search_button" />
+        
+        <EditText
+            android:id="@+id/TopsearchEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ems="1"
+            android:hint="@string/HINT_SEARCH_MY_PINTACTS"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </TableRow>
+
+<!--     <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000FF" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:background="#00FF00"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+ -->
+            <TableLayout
+                android:id="@+id/leftTableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"> 
+
+			    <TableRow
+			        android:id="@+id/NotificationTR"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+			
+			        <ImageView
+			            android:id="@+id/imageNotify"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:src="@drawable/settings" />
+			
+			        <TextView
+			            android:id="@+id/NotifyTV"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:layout_gravity="left"
+			            android:text="@string/left_deck_notify"
+			            android:layout_weight="1"
+			            android:paddingLeft="20dp"
+			            android:textAlignment="textStart"
+			            android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			        <ImageView
+			            android:id="@+id/imageNotify2"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="right"
+			            android:src="@drawable/settings" />
+     			</TableRow>
+
+			    <TableRow
+			        android:id="@+id/GroupTR"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+			
+			        <ImageView
+			            android:id="@+id/imageGroup"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:src="@drawable/settings" />
+			
+			        <TextView
+			            android:id="@+id/GroupTV"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:text="@string/left_deck_group"
+			            android:layout_gravity="left"
+			            android:paddingLeft="20dp"
+			            android:textAlignment="textStart"
+			            android:textAppearance="?android:attr/textAppearanceLarge" />
+			        
+			    </TableRow>
+
+			    <TableRow
+			        android:id="@+id/LabelTR"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+			
+			        <ImageView
+			            android:id="@+id/imageLabel"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:src="@drawable/settings" />
+			
+			        <TextView
+			            android:id="@+id/LabelTV"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:layout_gravity="left"
+			            android:layout_weight="1"
+			            android:paddingLeft="20dp"
+			            android:text="@string/left_deck_label"
+			            android:textAlignment="textStart"
+			            android:textAppearance="?android:attr/textAppearanceLarge" />
+			        
+			        <ImageView
+			            android:id="@+id/imageLabel2"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:src="@drawable/settings" />
+			        			
+			        			
+			    </TableRow>
+			    
+			 </TableLayout>
+
+ <!--        </ScrollView>
+
+    </TableRow> -->
+
+
+</TableLayout>

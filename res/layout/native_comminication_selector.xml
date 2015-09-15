@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/native_communication_view"
+    android:background="@color/PINTACT_WHITE_COLOR"
+    android:orientation="vertical"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    >
+    
+    <TextView
+        	android:id="@+id/native_communication_error"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="@dimen/im_padding_10dp"
+            android:text="@string/no_comm_available_error_message"
+            android:textSize="@dimen/csl_small"
+            android:textStyle="normal"
+            android:textColor="@color/PINTACT_BLACK_COLOR"
+            android:layout_width="match_parent" />
+    
+    <TextView
+            android:id="@+id/native_communication_sms"
+            style="@style/DialogButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="@dimen/im_padding_10dp"
+            android:text="@string/comm_sms"
+            android:textSize="@dimen/csl_small"
+            android:textStyle="normal"
+            android:textColor="@color/PINTACT_BLACK_COLOR"
+            android:layout_width="match_parent" />
+    
+    <TextView
+            android:id="@+id/native_communication_email"
+            style="@style/DialogButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="@dimen/im_padding_10dp"
+            android:text="@string/comm_email"
+            android:textSize="@dimen/csl_small"
+            android:textStyle="normal"
+            android:textColor="@color/PINTACT_BLACK_COLOR"
+            android:layout_width="match_parent" />
+    
+</LinearLayout>

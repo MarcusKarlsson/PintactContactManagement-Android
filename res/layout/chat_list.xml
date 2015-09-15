@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/PINTACT_WHITE_COLOR"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            >
+
+        <ListView
+            android:id="@+id/ChatsList"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:dividerHeight="10dp"
+            android:divider="@color/PINTACT_WHITE_COLOR"
+            android:padding="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newMessageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="bottom|right"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="50dp"
+                android:src="@drawable/content_new_attachment"
+                android:id="@+id/attachImageView"
+                android:onClick="attachImage"/>
+
+            <EditText
+                android:id="@+id/chat"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:minHeight="50dp"
+                android:hint="Type your message here"
+                android:layout_weight="2"
+                android:inputType="textCapSentences|textMultiLine"
+                />
+
+            <ImageView
+                android:id="@+id/chatSendButton"
+                android:src="@drawable/social_send_now"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:minWidth="100dp"
+                android:gravity="right"
+                android:layout_marginRight="0dp"
+                android:onClick="sendMessage"
+                android:layout_weight="1"
+                android:background="@color/PINTACT_WHITE_COLOR"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<resources>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="left_deck_width">600dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="left_deck_list_divider_height">4dp</dimen>
+    <dimen name="image_top_margin">20dp</dimen>
+    <dimen name="image_botton_margin">20dp</dimen>
+    <dimen name="image_left_margin">25dp</dimen>
+    <dimen name="image_right_margin">10dp</dimen>
+    <dimen name="text_top_margin">30dp</dimen>
+    <dimen name="text_vertical">5dp</dimen>
+    <dimen name="icon_image_margin">5dp</dimen>
+    <dimen name="icon_empty_padding">20dp</dimen>
+    <dimen name="icon_prof_right_margin">40dp</dimen>
+    <dimen name="profile_separate">20dp</dimen>
+    <dimen name="profile_note_pad_10dp">10dp</dimen>
+    <dimen name="text_prof_left_margin">20dp</dimen>
+    <dimen name="left_margin_label_expand">80dp</dimen>
+    <dimen name="left_text_size">25sp</dimen>
+    <dimen name="left_text_size_expand">20sp</dimen>
+    
+    <!--  Setting Main page styles -->
+    <dimen name="set_pad_item_top">40dp</dimen>
+    <dimen name="set_pad_item_bottom">5dp</dimen>
+    <dimen name="set_pad_item_left">30dp</dimen>
+    <dimen name="set_pad_sub_item_top">20dp</dimen>
+    <dimen name="set_item_text_size">18sp</dimen>
+    <dimen name="set_sub_item_text_size">20sp</dimen>
+    
+    <!--  Login page settings -->
+    <dimen name="login_text_size">25sp</dimen>
+    <dimen name="login_hw_text_size">25sp</dimen>
+    <dimen name="login_nav_size">20sp</dimen>
+    <dimen name="login_forgot_text_size">20sp</dimen>
+    <dimen name="login_nopin_text_size">25sp</dimen>
+    <dimen name="login_register_err_size">15sp</dimen>
+    <dimen name="login_side_margin">100dp</dimen>
+    <dimen name="login_pad_bottom">10dp</dimen>
+    <dimen name="login_btn_margin_top">40dp</dimen>
+    <dimen name="login_item_margin_pad">20dp</dimen>
+    <dimen name="login_btn_pad">5dp</dimen>
+    <dimen name="login_forgot_top">15dp</dimen>
+    <dimen name="login_hw_top">30dp</dimen>
+    <integer name="login_size_ems">12</integer>
+    
+    <!--  Login Register Pin page styles -->
+    <dimen name="lrp_pin_pad">15dp</dimen>
+    <dimen name="lrp_text_size">30sp</dimen>
+    <dimen name="lrp_desc_text_size">18sp</dimen>
+    
+    <!--  Login Register Success page styles -->
+    <dimen name="lrs_pad_margin">40dp</dimen>
+    <dimen name="lrs_pad_margin_30dp">40dp</dimen>
+    <dimen name="lrs_pad_margin_10dp">15dp</dimen>
+    <dimen name="lrs_text_size_30sp">40sp</dimen>
+    <dimen name="lrs_text_size_35sp">45sp</dimen>
+    <dimen name="lrs_text_size_15sp">22sp</dimen>
+    <dimen name="lrs_text_size_18sp">25sp</dimen>
+    
+    <!--  Login page settings -->
+    <dimen name="ab_text_size">25sp</dimen>
+    <dimen name="ab_button_size">20sp</dimen>
+    
+    <!--  Left deck search settings -->
+    <dimen name="ld_search_pad_20dp">20dp</dimen>
+    <dimen name="ld_search_pad_40dp">40dp</dimen>
+    <dimen name="ld_parent_pad_5dp">5dp</dimen>
+    <dimen name="ld_parent_pad_10dp">10dp</dimen>
+    <dimen name="ld_parent_pad_20dp">20dp</dimen>
+    
+	<!--  Left Deck Menu Styles -->
+   	<dimen name="left_deck_text_size">20sp</dimen>
+   	<dimen name="left_deck_option_text_size">25sp</dimen>
+   	<dimen name="ld_add_margin_pad">40dp</dimen>
+   	<dimen name="ld_add_top_pad">10dp</dimen>
+   	<dimen name="ld_add_left_pad">80dp</dimen>
+   	<dimen name="ld_sep_top_pad">20dp</dimen>
+   	<dimen name="ld_sep_left_pad">40dp</dimen>
+   	<dimen name="ld_optoin_left_pad">140dp</dimen>
+   	<dimen name="ld_image_width">60dp</dimen>
+   	<dimen name="ld_add_margin_pad_left">40dp</dimen>    
+
+    <!--  New Profile Styles -->
+   	<dimen name="profile_new_top">20dp</dimen>
+   	<dimen name="profile_item_top">15dp</dimen>
+   	<dimen name="profile_side_margin_80dp">80dp</dimen>
+   	<dimen name="profile_padding_h">10dp</dimen>
+   	<dimen name="profile_new_text_size">25sp</dimen>
+   	<dimen name="pcn_image_size">202dp</dimen>
+   	<dimen name="pcn_icon_size">30dp</dimen>
+   	
+	<!--  Success New Profile Styles -->
+	<dimen name="pcs_ts_45sp">45sp</dimen>   	
+	<dimen name="pcs_desc_pad_20dp">20dp</dimen>   	
+
+	<!--  Invite Page Styles -->
+	<dimen name="im_padding_20dp">20dp</dimen>				    
+	<dimen name="im_padding_10dp">10dp</dimen>				    
+	<dimen name="im_margin_100dp">100dp</dimen>				    
+	<dimen name="im_margin_60dp">60dp</dimen>				    
+	<dimen name="im_margin_40dp">40dp</dimen>	
+	<dimen name="im_text_size_25sp">25sp</dimen>	
+	<dimen name="im_text_size_22sp">22sp</dimen>	
+						    
+	<!-- Searching setting -->
+	<dimen name="csl_big">30sp</dimen>			
+	<dimen name="csl_small">25sp</dimen>
+	
+	<!-- Contact Add Main -->
+	<dimen name="cam_image_size">210dp</dimen>	
+	<dimen name="cam_initial_size">80dp</dimen>		
+	<dimen name="cam_initial_text">35sp</dimen>	
+	<dimen name="cam_invite_width">100dp</dimen>	
+	<dimen name="cam_invite_height">60dp</dimen>	
+	<dimen name="cam_invite_text">25sp</dimen>	
+	<dimen name="ab_right_bar_20dp">20dp</dimen>
+	<dimen name="ab_right_btn_10dp">10dp</dimen>
+	<dimen name="gm_text_size_31sp">31sp</dimen>
+	<dimen name="pt_size_200dp">200dp</dimen>
+	<dimen name="pt_mgin_20dp">20dp</dimen>
+	<dimen name="pt_text_width">180dp</dimen>
+	<dimen name="pt_text_height">40dp</dimen>
+	<dimen name="pt_image_height">140dp</dimen>
+	<dimen name="pt_text_ht_30dp">30dp</dimen>
+	<!-- text_width = text_height + image_height -->
+	<!-- pt_size_200dp = 2*pt_text_ht_30dp + image_height -->
+	<dimen name="pt_text_size">30sp</dimen>
+	<dimen name="pt_text_size_25sp">25sp</dimen>
+	<dimen name="pt_text_size_20sp">20sp</dimen>
+	<dimen name="pt_int_margin_10dp">10dp</dimen>
+	<dimen name="pt_int_margin_5dp">5dp</dimen>
+		
+	<!--  Notification style  -->
+	<dimen name="nt_initial_size">60dp</dimen>
+	<dimen name="nt_initial_mgin_10dp">10dp</dimen>
+	<dimen name="nt_initial_mgin_20dp">20dp</dimen>
+	<dimen name="nt_initial_ts_25sp">25sp</dimen>
+	<dimen name="nt_initial_left">48dp</dimen>
+	<dimen name="nt_initial_top">80dp</dimen>
+	<!-- left = nt_initial_mgin_20dp + nt_initial_size / 2 - 2 -->
+	<!-- top  = nt_initial_mgin_20dp + nt_initial_size -->
+	<dimen name="nt_text_height">100dp</dimen>
+	<dimen name="nt_text_magin_left">20dp</dimen>
+	<!--  height = initial_size + bar_20dp -->
+	<!--  magin_left = nt_initial_mgin_20dp * 2 + initial_size  -->
+	<dimen name="nt_button_height">50dp</dimen>
+	<dimen name="nt_button_magin_right1">100dp</dimen>
+	<dimen name="nt_button_magin_right2">30dp</dimen>
+			
+	<!--  small profile icons  -->
+	<dimen name="pt_mgin_10dp">10dp</dimen>
+	<dimen name="pt_text_width_half">90dp</dimen>
+	<dimen name="pt_text_height_half">20dp</dimen>
+	<dimen name="pt_text_size_half">15sp</dimen>
+	<dimen name="pt_image_height_half">70dp</dimen>	
+	
+</resources>

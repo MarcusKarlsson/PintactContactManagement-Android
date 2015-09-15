@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pintact_round_white_rect"
+              android:gravity="left"
+              android:orientation="horizontal"
+              android:weightSum="1">
+
+    <com.pinplanet.pintact.utility.CustomNetworkImageView
+        android:id="@+id/chatImageViewProfilePicture"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:gravity="end"
+        android:layout_gravity="end|right"
+        android:padding="1dp"
+        android:src="@drawable/pintact_avatar"
+        android:background="@drawable/pintact_picture_frame_grey_bg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/chatInitialTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="AR"
+        android:textColor="@color/PINTACT_GRAY_COLOR"
+        android:background="@drawable/pintact_picture_frame_grey_bg"
+        android:textSize="30dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1.00">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left">
+
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Andrew Rinaldi"
+            android:textColor="@color/PINTACT_GRAY_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+            android:textStyle="bold"
+            android:lines="1"
+            android:maxLines="1"
+            app:FontStyles="bold"
+            android:background="@null"
+            android:layout_gravity="left"
+            />
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/chatTimeStamp"
+            android:gravity="end|right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30am"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/PINTACT_GRAY_COLOR"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:lines="1"
+            android:maxLines="1"
+            app:FontStyles="bold"
+            android:background="@null"
+            />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:text="Testing the text with a longer and more robust text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:textColor="@color/PINTACT_TEXT_COLOR"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/PINTACT_ITEM_PADDING"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/images"
+            android:id="@+id/sentImageView"
+            android:onClick="imageClicked"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

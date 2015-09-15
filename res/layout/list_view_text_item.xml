@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+    android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    android:background="@drawable/pintact_white_rect_with_1_bottom_line"
+    android:gravity="center_vertical">
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/PINTACT_DARKGRAY_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_NORMAL"
+        android:textStyle="normal"
+        app:FontStyles="light"
+        android:ellipsize="end" />
+
+    <!-- can be invite or add -->
+
+
+</LinearLayout>

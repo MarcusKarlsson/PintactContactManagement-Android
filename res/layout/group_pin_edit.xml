@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gm_edit_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PINTACT_WHITE_COLOR" >
+
+    <RelativeLayout
+        android:id="@+id/group_pin_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/gpn_name_tv"
+            style="@style/GroupPinText"
+            android:text="@string/gm_name"
+            />
+
+        <EditText
+            android:id="@+id/gm_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gpn_name_tv"
+            android:padding="10dp"
+            android:hint="@string/gm_name_hint"
+            android:textColorHint="@color/PINTACT_TEXT_HINT_COLOR"
+            android:textColor="@color/gp_color"
+            android:background="@color/PINTACT_WHITE_COLOR" />
+
+        <TextView
+            android:id="@+id/gpn_expr_tv"
+            style="@style/GroupPinText"
+            android:layout_below="@+id/gm_name"
+            android:text="@string/gm_expr" />
+
+        <NumberPicker
+            android:id="@+id/gpn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gpn_expr_tv"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/gps_pin_tv"
+            style="@style/GroupPinText"
+            android:layout_below="@+id/gpn_date"
+            android:layout_marginBottom="@dimen/login_btn_margin_top"
+            android:text="@string/gm_select_profile" />
+
+        <HorizontalScrollView
+            android:id="@+id/ps_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gps_pin_tv" >
+
+            <LinearLayout
+                android:id="@+id/ps_share_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+		
+	    <RelativeLayout
+	        android:id="@+id/gm_control_space"
+	        android:layout_width="match_parent"
+	        android:layout_height="10dp"
+	        android:layout_below="@+id/ps_scroll"
+	        android:background="@color/PINTACT_LIGHTGRAY_COLOR" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gm_control_space"
+            android:orientation="horizontal"
+            android:gravity="center" >
+            
+            <TextView
+                android:id="@+id/gm_cancel"
+                style="@style/BigBlueButtonStyle"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="@string/gm_cancel"
+                android:textStyle="normal"
+            	android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/gm_create"
+                style="@style/BigOrangeButtonStyle"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="@string/gm_create"
+                android:textStyle="normal"
+            	android:layout_margin="5dp" />
+            
+            <TextView
+                android:id="@+id/gm_edit"
+                style="@style/BigOrangeButtonStyle"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="@string/gm_edit"
+                android:textStyle="normal"
+            	android:layout_margin="5dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

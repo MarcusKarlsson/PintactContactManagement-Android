@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+
+    <LinearLayout style="@style/PCNLinear"
+        android:orientation="vertical"
+        android:id="@+id/lm_llo"
+        android:clipChildren="false" >
+
+        <TextView
+            style="@style/LLIInstruct"
+            android:id="@+id/textView1"
+            android:text="@string/gm_msg_top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gm_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PINTACT_WHITE_COLOR"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/lm_llo"  >
+
+        <TextView
+            android:id="@+id/gmn_add_button"
+            style="@style/BigOrangeButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="@dimen/im_padding_10dp"
+            android:text="@string/gm_new_pin"
+            android:textSize="@dimen/csl_small"
+            android:textStyle="normal"
+            android:layout_width="0px"
+            android:layout_weight="1" />
+        
+        <TextView
+            android:id="@+id/gmn_join_button"
+            style="@style/BigOrangeButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="@dimen/im_padding_10dp"
+            android:text="@string/gm_join_pin"
+            android:textSize="@dimen/csl_small"
+            android:textStyle="normal"
+            android:layout_width="0px"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/gm_space2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/gm_action" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gm_space2" >
+
+        <LinearLayout
+            android:id="@+id/gmn_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

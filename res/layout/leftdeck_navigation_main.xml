@@ -1,0 +1,197 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+		<ScrollView
+		    android:id="@+id/left_drawer"
+		    android:layout_width="@dimen/left_deck_width"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="start"
+		    android:background="@color/PINTACT_LEFT_DECK_BG_COLOR"
+		    android:orientation="vertical"  >
+
+			<LinearLayout
+			    android:id="@+id/ldm_add_layout"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:paddingLeft="@dimen/PINTACT_LEFT_DECK_SEPERATOR_HORIZONTAL_MARGIN"
+			    android:paddingRight="@dimen/PINTACT_LEFT_DECK_SEPERATOR_HORIZONTAL_MARGIN" >
+
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="center"
+			        android:orientation="vertical"
+			        android:paddingBottom="@dimen/PINTACT_LEFT_DECK_ITEM_VERTICAL_MARGIN"
+			        android:paddingTop="@dimen/PINTACT_LEFT_DECK_ITEM_VERTICAL_MARGIN" >
+
+			        <com.pinplanet.pintact.utility.TextViewTypeFace
+			            android:id="@+id/ldm_add_pintact"
+			            style="@style/BigOrangeButtonStyle"
+			            android:drawableLeft="@drawable/plus_add"
+			            android:text="@string/ldm_add_pintact"
+			            app:FontStyles="normal|bold" />
+			    </LinearLayout>
+
+			    <!-- For "Contacts" -->
+			    <com.pinplanet.pintact.utility.TextViewTypeFace
+			        android:id="@+id/ldm_contacts"
+			        style="@style/LeftDeckItemStyle"
+			        android:onClick="onMenuClicked"
+			        android:drawableLeft="@drawable/ld_contacts"
+			        android:text="@string/ldm_contact"
+			        app:FontStyles="normal|bold"
+			        />
+
+			    <View
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/PINTACT_SEPERATOR_HEIGHT"
+			        android:layout_weight="1"
+			        android:background="@color/PINTACT_LEFT_DECK_SEPERATOR_COLOR" /><!-- for "Group PIN" -->
+			    <com.pinplanet.pintact.utility.TextViewTypeFace
+			        android:id="@+id/ldm_group_pin"
+					style="@style/LeftDeckItemStyle"
+			        android:onClick="onMenuClicked"
+			        android:drawableLeft="@drawable/ld_group_pin"
+			        android:text="@string/ldm_group"
+			        app:FontStyles="normal|bold" />
+
+			    <View
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/PINTACT_SEPERATOR_HEIGHT"
+			        android:layout_weight="1"
+			        android:background="@color/PINTACT_LEFT_DECK_SEPERATOR_COLOR" />
+
+
+			    <!-- for "Labels" -->
+			    <com.pinplanet.pintact.utility.TextViewTypeFace
+			        android:id="@+id/ldm_labels"
+					style="@style/LeftDeckItemStyle"
+			        android:onClick="onMenuClicked"
+			        android:drawableLeft="@drawable/ld_labels"
+			        android:text="@string/ldm_label"
+			        app:FontStyles="normal|bold" />
+
+			    <View
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/PINTACT_SEPERATOR_HEIGHT"
+			        android:layout_weight="1"
+			        android:background="@color/PINTACT_LEFT_DECK_SEPERATOR_COLOR" />			    
+
+			    
+			    <!-- for "Notification" -->
+			    <LinearLayout
+			        android:id="@+id/ldm_notifications"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:clickable="true"
+			        android:onClick="onMenuClicked"
+			        >
+
+			    	<com.pinplanet.pintact.utility.TextViewTypeFace
+			        android:id="@+id/tvtf_notifications"
+					style="@style/LeftDeckItemStyle"
+					android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+                    android:layout_weight="1"
+			        android:drawableLeft="@drawable/ld_notifications"
+                    android:clickable="false"
+			        android:text="@string/ldm_notify"
+			        app:FontStyles="normal|bold" 
+			        />
+
+			    	<RelativeLayout
+			    	    android:id="@+id/notificationView"
+			    	    android:layout_width="wrap_content"
+			    	    android:layout_height="match_parent"
+                        >
+			    	    
+			    	    <ImageView
+                        android:id="@+id/img_view"
+			    	    android:layout_width="wrap_content"
+			    	    android:layout_height="wrap_content"
+			    	    android:src="@drawable/ld_notification_counter"
+                        android:layout_centerInParent="true" />
+
+                        <com.pinplanet.pintact.utility.TextViewTypeFace
+                            android:id="@+id/textViewNotificationCounter"
+                            android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                            android:textColor="@color/PINTACT_WHITE_COLOR"
+                            android:text="0"
+                            android:gravity="center"
+                            app:FontStyles="normal|bold"
+                            android:layout_alignLeft="@+id/img_view"
+                            android:layout_alignRight="@+id/img_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/img_view"
+                            android:layout_alignBottom="@+id/img_view"
+                             />
+                    </RelativeLayout>
+			    </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/PINTACT_SEPERATOR_HEIGHT"
+                    android:layout_weight="1"
+                    android:background="@color/PINTACT_LEFT_DECK_SEPERATOR_COLOR" />
+			    			   
+			    <!-- for "Profile" -->
+			    <com.pinplanet.pintact.utility.TextViewTypeFace
+			        android:id="@+id/ldm_profile"
+			        style="@style/LeftDeckItemStyle"
+			        android:onClick="onMenuClicked"
+			        android:drawableLeft="@drawable/ld_profiles"			      
+			        android:text="@string/ldm_profile"
+			        app:FontStyles="normal|bold" />
+
+			    <View
+			        android:layout_width="match_parent"
+			        android:layout_height="@dimen/PINTACT_SEPERATOR_HEIGHT"
+			        android:layout_weight="1"
+			        android:background="@color/PINTACT_LEFT_DECK_SEPERATOR_COLOR" />	
+
+
+			    <!-- for "Settings" -->
+			    <com.pinplanet.pintact.utility.TextViewTypeFace
+			        android:id="@+id/ldm_settings"
+					style="@style/LeftDeckItemStyle"
+			        android:onClick="onMenuClicked"
+			        android:drawableLeft="@drawable/ld_settings"
+			        android:text="@string/ldm_setting"
+			        app:FontStyles="normal|bold" />
+
+			</LinearLayout>
+						
+	</ScrollView>
+    
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+    
+    <TextView style="@style/IMPersonal"
+        android:id="@+id/im_msg_title"
+        android:text="@string/im_msg_title"
+        />
+
+    <TextView style="@style/PCNSep"
+        android:layout_below="@+id/im_msg_title"
+    	android:layout_height="1dp" 
+    	android:id="@+id/im_title_sep"
+    	/>
+    
+    <TextView style="@style/IMPersonal"
+        android:layout_below="@+id/im_title_sep"
+        android:id="@+id/im_msg"
+        android:text="@string/im_msg"
+        android:textStyle="italic"
+        android:background="@color/PINTACT_WHITE_COLOR"
+        android:paddingBottom="@dimen/im_margin_40dp"
+        />
+
+    <TextView style="@style/PCNSep"
+        android:layout_below="@+id/im_msg"
+    	android:layout_height="1dp" 
+    	android:id="@+id/im_msg_sep"
+    	/>
+    
+    <TextView style="@style/IMSend"
+        android:layout_below="@+id/im_msg_sep"
+        android:text="@string/im_send"
+        android:id="@+id/im_send" 
+        />
+
+    <TextView style="@style/LRBack"
+        android:layout_alignLeft="@+id/im_send"
+        android:clickable="true"
+        android:id="@+id/lrBack"
+        />
+    
+</RelativeLayout>

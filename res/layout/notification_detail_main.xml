@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/PINTACT_WHITE_COLOR">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Sync -->
+        <TextView style="@style/SetItem"
+                  android:text="@string/noti_detail_update_from"
+                  android:id="@+id/noti_detail_update_from" />
+        <FrameLayout
+            android:layout_width="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+            android:layout_height="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+            android:layout_below="@+id/noti_detail_update_from"
+            android:background="@drawable/pintact_round_grey_rect_with_border"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nli_lo"
+            >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/nli_initial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_XTRA_LARGE"
+                android:textStyle="normal"
+                android:lines="1"
+                android:maxLines="1"
+                android:gravity="center" />
+
+            <com.pinplanet.pintact.utility.CustomNetworkImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewPicture"
+                android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING"
+                android:src="@drawable/silhouette"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pintact_list_picture_frame"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING">
+                <View android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/pintact_round_transparent_rect_with_border"
+                    />
+            </FrameLayout>
+
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/PINTACT_BLACK_COLOR"
+            android:layout_below="@+id/noti_detail_update_from"
+            android:layout_toRightOf="@+id/nli_lo"
+            android:textStyle="bold"
+            android:textSize="@dimen/nt_initial_ts_25sp"
+            android:text="@string/dummy"
+            android:id="@+id/nli_name" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/PINTACT_BLACK_COLOR"
+            android:layout_below="@+id/nli_name"
+            android:layout_toRightOf="@+id/nli_lo"
+            android:textStyle="bold"
+            android:textSize="@dimen/nt_initial_ts_25sp"
+            android:text="@string/dummy"
+            android:id="@+id/nli_title_company" />
+
+        <TextView style="@style/SetItem"
+                  android:layout_below="@+id/nli_title_company"
+                  android:text="@string/noti_detail_introduced_to"
+                  android:visibility="gone"
+                  android:id="@+id/introduced_to_title" />
+
+        <FrameLayout
+            android:layout_width="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+            android:layout_height="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+            android:background="@drawable/pintact_round_grey_rect_with_border"
+            android:layout_below="@+id/introduced_to_title"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:id="@+id/introduced_to_lo"
+            >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/introduced_to_initial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+                android:textSize="@dimen/TEXT_SIZE_XTRA_LARGE"
+                android:textStyle="normal"
+                android:lines="1"
+                android:maxLines="1"
+                android:gravity="center" />
+
+            <com.pinplanet.pintact.utility.CustomNetworkImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/introducedToimageViewPicture"
+                android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING"
+                android:src="@drawable/silhouette"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pintact_list_picture_frame"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/PINTACT_LIST_PICTURE_PADDING">
+                <View android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@drawable/pintact_round_transparent_rect_with_border"
+                    />
+            </FrameLayout>
+
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/PINTACT_BLACK_COLOR"
+            android:layout_below="@+id/introduced_to_title"
+            android:layout_toRightOf="@+id/nli_lo"
+            android:textStyle="bold"
+            android:textSize="@dimen/nt_initial_ts_25sp"
+            android:text="@string/dummy"
+            android:visibility="gone"
+            android:id="@+id/introduced_to_name" />
+
+        <TextView style="@style/SetSubItem"
+                  android:layout_below="@+id/introduced_to_title"
+                  android:id="@+id/noti_detail_update_from_text" />
+
+
+        <TextView style="@style/SetItem"
+                  android:text="@string/noti_detail_associate_group_pin"
+                  android:layout_below="@+id/noti_detail_update_from_text"
+                  android:id="@+id/noti_detail_associate_group_pin"
+                  android:visibility="gone"/>
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/noti_detail_associate_group_pin"
+                  android:id="@+id/set_item_sep2"
+                  android:visibility="gone"/>
+
+        <TextView style="@style/SetSubItem"
+                  android:layout_below="@+id/set_item_sep2"
+                  android:id="@+id/noti_detail_associate_group_pin_text"
+                  android:visibility="gone"/>
+
+        <TextView style="@style/SetItem"
+                  android:text="@string/noti_detail_update_details"
+                  android:layout_below="@+id/noti_detail_associate_group_pin_text"
+                  android:id="@+id/noti_detail_update_details" />
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/noti_detail_update_details"
+                  android:id="@+id/set_item_sep3" />
+
+        <TextView style="@style/SetSubItem"
+                  android:layout_below="@+id/set_item_sep3"
+                  android:id="@+id/noti_detail_update_details_text" />
+
+        <TextView style="@style/SetItem"
+                  android:layout_below="@+id/noti_detail_update_details_text"
+                  android:text="@string/noti_detail_when"
+                  android:id="@+id/noti_detail_when" />
+
+        <TextView style="@style/SetItemSep"
+                  android:layout_below="@+id/noti_detail_when"
+                  android:id="@+id/set_item_sep4" />
+
+        <TextView style="@style/SetSubItem"
+                  android:layout_below="@+id/set_item_sep4"
+                  android:id="@+id/noti_detail_when_text" />
+
+        <!--  for icons -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/noti_detail_when_text"
+            android:id="@+id/nli_accept"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:weightSum="1.0"
+            >
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                style="@style/IMSend"
+                                                  android:clickable="true"
+                                                  android:onClick="onRejectInvite"
+                                                  android:text="@string/ab_cancel"
+                                                  android:background="@drawable/pintact_round_blue_rect"
+                                                  android:id="@+id/nli_cxl_tv"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_weight=".5"
+                                                  android:layout_width="0dip"/>
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                style="@style/IMSend"
+                                                  android:clickable="true"
+                                                  android:onClick="onAcceptInvite"
+                                                  android:text="@string/ab_accept"
+                                                  android:background="@drawable/pintact_round_orange_rect"
+                                                  android:id="@+id/nli_accept_tv"
+                                                  android:layout_height="wrap_content"
+                                                  android:layout_weight=".5"
+                                                  android:layout_width="0dip"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/for_data1"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/for_data"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

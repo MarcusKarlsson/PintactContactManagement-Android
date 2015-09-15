@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+	<RelativeLayout 
+	    android:layout_width="@dimen/pt_size_200dp"
+	    android:layout_height="@dimen/pt_size_200dp"
+	    android:clickable="true"
+	    android:layout_margin="@dimen/pt_mgin_20dp"
+	    android:id="@+id/pt_all"
+        android:background="@drawable/border_profile_thumb_nosel">
+    
+	    <TextView
+	        android:layout_width="@dimen/pt_text_width"
+	        android:layout_height="@dimen/pt_text_height"
+	        android:layout_marginTop="@dimen/pt_int_margin_10dp"
+	        android:layout_marginLeft="@dimen/pt_int_margin_10dp"
+	        android:layout_marginRight="@dimen/pt_int_margin_10dp"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:id="@+id/pt_name"
+	        android:textStyle="bold"
+	        android:textColor="@color/PINTACT_WHITE_COLOR"
+	        android:textSize="@dimen/pt_text_size"
+	        android:text="@string/ab_new_profile_success"
+	        />
+
+        <com.pinplanet.pintact.utility.CustomNetworkImageView
+	        android:id="@+id/pt_profile_image"
+	        android:layout_below="@+id/pt_name"
+	        android:layout_width="@dimen/pt_text_width"
+	        android:layout_height="@dimen/pt_image_height"
+	        android:layout_marginLeft="@dimen/pt_int_margin_10dp"
+	        android:layout_marginRight="@dimen/pt_int_margin_10dp"
+	        android:layout_marginBottom="@dimen/pt_int_margin_10dp"
+	        android:contentDescription="@string/dummy"
+	        android:src="@drawable/silhouette"
+	        android:background="@drawable/border_search_no"
+	        />
+
+	</RelativeLayout>
+	    	    
+</RelativeLayout>

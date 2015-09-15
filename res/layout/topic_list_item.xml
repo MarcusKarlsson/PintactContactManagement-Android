@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/pintact_white_rect_with_1_bottom_line"
+    >
+
+
+    <TextView
+        android:id="@+id/topic"
+        android:text="Topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="17dp"
+        android:textColor="@color/PINTACT_BLACK_COLOR"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:padding="0dp"
+        />
+
+    <TextView
+        android:id="@+id/lastMessageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topic"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignLeft="@id/topic"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/lastMessageTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/newMessageCount"
+        android:layout_marginBottom="0dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/newMessageCount"
+        android:text="1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/PINTACT_WHITE_COLOR"
+        android:background="@drawable/ld_notification_counter"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/topic"
+        android:layout_alignParentRight="true"
+        android:padding="0dp"
+        />
+
+</RelativeLayout>

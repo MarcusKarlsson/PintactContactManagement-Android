@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">   
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	       <!--  <padding android:left="15dp" android:right="15dp"/> -->  
+	       <solid android:color="@color/PINTACT_ORANGE_COLOR" />
+	       <corners android:radius="4dp" />
+		</shape>
+    </item> 
+    <item> 
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+	    <!--  <padding android:left="15dp" android:right="15dp"/> -->  
+	       <solid android:color="@color/PINTACT_ORANGE_COLOR" />
+	       <corners android:radius="4dp" />
+		</shape>
+    </item><!-- default -->
+</selector>

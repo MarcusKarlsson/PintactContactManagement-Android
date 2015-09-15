@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/PINTACT_LIGHTGRAY_COLOR"
+    android:padding="@dimen/PINTACT_ITEM_PADDING"
+    android:clickable="true"
+    android:enabled="false"
+    android:gravity="center_vertical">
+
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewChar"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/PINTACT_TEXT_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_LARGE"
+        android:textStyle="bold"
+        app:FontStyles="normal|bold" />
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+
+
+    <!-- IMPORTANT: android:focusable="false" / android:clickable="false" or never a group click will be fired -->
+    <CheckBox
+        android:id="@+id/checkBoxHeader"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:enabled="false"
+        android:checked="true"
+        android:button="@drawable/pintact_selector_profile_check_arrow"
+        android:visibility="invisible" />
+
+</LinearLayout>

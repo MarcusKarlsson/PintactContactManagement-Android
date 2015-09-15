@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginTop="10dp"
+    android:clickable="false"
+    android:background="@drawable/pintact_white_rect_with_1_bottom_line">
+
+
+    <FrameLayout
+        android:layout_width="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:layout_height="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:background="@drawable/pintact_round_grey_rect_with_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+    <com.pinplanet.pintact.utility.CustomNetworkImageView
+        android:id="@+id/networkImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/silhouette"
+        android:padding="@dimen/PINTACT_PROFILE_PICTURE_PADDING"
+        android:visibility="visible"
+        />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jane Doe"
+        android:textStyle="bold"
+        android:clickable="false"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/networkNameView" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:gravity="right">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/circle"
+        android:gravity="center_vertical|right"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="10dp"
+        android:id="@+id/networkCheckCircle" />
+    </LinearLayout>
+</LinearLayout>

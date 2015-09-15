@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_pin_view"
+    android:background="@color/PINTACT_VIEW_BG_COLOR" >
+
+    <com.pinplanet.pintact.utility.TextViewTypeFace
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+        android:layout_marginTop="@dimen/PINTACT_MARGIN_VIEW_VERTICAL"
+        android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+        android:text="@string/lrpin_text"
+        android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+        android:textSize="@dimen/TEXT_SIZE_SMALL"
+        android:textStyle="bold"
+        app:FontStyles="normal|bold"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textViewInfo">
+
+        <com.pinplanet.pintact.utility.EditTextTypeFace
+            android:id="@+id/editTextEnterPin"
+            style="@style/BigEditTextStyle"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+            android:maxLength="7"
+            android:drawableRight="@drawable/pin_check_empty"
+            android:drawablePadding="@dimen/PINTACT_LEFT_DECK_ITEM_HORIZONTAL_MARGIN"
+            app:FontStyles="normal|bold">
+            <requestFocus/>
+        </com.pinplanet.pintact.utility.EditTextTypeFace>
+
+        <com.pinplanet.pintact.utility.TextViewTypeFace
+            android:id="@+id/textViewDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+            android:layout_marginBottom="@dimen/PINTACT_MARGIN_ITEM_VERTICAL"
+            android:text="@string/lrp_desc"
+            android:textColor="@color/PINTACT_TEXT_LABEL_COLOR"
+            android:textSize="@dimen/TEXT_SIZE_SMALL"
+            android:textStyle="bold"
+            app:FontStyles="normal|italic"
+             />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pintact_white_rect_with_2_lines"
+            android:paddingTop="@dimen/PINTACT_ITEM_PADDING"
+            android:paddingBottom="@dimen/PINTACT_ITEM_PADDING"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/buttonSuggest"
+                style="@style/BigBlueButtonStyle"
+                android:clickable="true"
+                android:onClick="onPinGen"
+                android:text="@string/lrp_suggest_pin"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+                android:layout_marginRight="@dimen/PINTACT_MARGIN_ITEM_HORIZONTAL" />
+
+            <com.pinplanet.pintact.utility.TextViewTypeFace
+                android:id="@+id/buttonJoin"
+                style="@style/BigOrangeButtonStyle"
+                android:clickable="true"
+                android:onClick="join"
+                android:text="@string/lrp_join"
+                android:textSize="@dimen/TEXT_SIZE_NORMAL"
+                app:FontStyles="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginRight="@dimen/PINTACT_MARGIN_VIEW_HORIZONZAL"
+                android:autoText="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--
+        <TextView style="@style/LRPinText"
+        android:id="@+id/lrPinText"
+        />
+
+    <EditText style="@style/LRPinInitial"
+        android:id="@+id/lrPinInitial"
+        />
+
+    <Button style="@style/LRPinSend"
+        android:id="@+id/lrPinSend"
+        />
+
+    <TextView style="@style/LRPinDesc"
+        android:id="@+id/lrPinDesc"
+        />
+
+    <TextView style="@style/LRBack"
+        android:id="@+id/lrBack"
+        />
+
+    <TextView style="@style/LRFinish"
+        android:id="@+id/lrFinish"
+        />
+    -->
+    
+</RelativeLayout>

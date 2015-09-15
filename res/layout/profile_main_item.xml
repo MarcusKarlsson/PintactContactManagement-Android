@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+	<RelativeLayout style="@style/PMIcon"
+	    android:id="@+id/pm_all"
+	    android:background="@drawable/border_profile_thumb_nosel" 
+	    >
+    
+	    <TextView
+	        android:layout_width="@dimen/pt_text_width"
+	        android:layout_height="@dimen/pt_text_ht_30dp"
+	        android:layout_marginTop="@dimen/pt_int_margin_5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:id="@+id/pm_name"
+	        android:textStyle="bold"
+	        android:textColor="@color/PINTACT_WHITE_COLOR"
+	        android:textSize="@dimen/pt_text_size_25sp"
+	        android:text="@string/ab_new_profile_success"
+            android:background="@null" />
+	        
+	    <com.pinplanet.pintact.utility.CustomNetworkImageView
+	        android:layout_below="@+id/pm_name"
+	        android:layout_width="@dimen/pt_text_width"
+	        android:layout_height="@dimen/pt_image_height"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginBottom="@dimen/pt_int_margin_5dp"
+	        android:contentDescription="@string/dummy"
+	        android:id="@+id/pm_image"
+	        android:src="@drawable/silhouette"
+	        android:background="@drawable/border_search_no"
+	        />
+
+	    <TextView
+	        android:layout_below="@+id/pm_image"
+	        android:layout_width="@dimen/pt_text_width"
+	        android:layout_height="@dimen/pt_text_ht_30dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:id="@+id/pm_profile_id"
+	        android:textStyle="bold"
+	        android:textColor="@color/PINTACT_WHITE_COLOR"
+	        android:textSize="@dimen/pt_text_size_20sp"
+	        android:text="@string/dummy"
+            android:background="@null" />
+	        
+	</RelativeLayout>
+
+	<!-- 	
+	<ImageView style="@style/CAMImage"
+	    android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/im_margin_60dp"
+	    android:contentDescription="@string/dummy"
+	    android:id="@+id/pm_new_profile"
+	    android:src="@drawable/new_profile"
+	    />
+     -->
+     
+</RelativeLayout>

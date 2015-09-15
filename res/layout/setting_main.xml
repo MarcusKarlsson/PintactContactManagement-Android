@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/PINTACT_WHITE_COLOR">
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    
+	    <!-- Sync -->
+	    <TextView style="@style/SetItem"
+	        android:text=""
+	        android:id="@+id/set_contact_sync" />
+	    
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_contact_sync"
+	        android:id="@+id/set_item_sep1" />
+
+	    <RelativeLayout
+	        android:id="@+id/about_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/set_item_sep1">
+	        <TextView style="@style/SetSubItem"
+	                  android:text="@string/set_about"
+	                  android:id="@+id/set_term" />
+	
+	        <ImageView
+	            android:id="@+id/set_term1"
+	            style="@style/SetArrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:contentDescription="@string/dummy"
+	            android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <TextView style="@style/SetSubItemSep"
+                  android:layout_below="@+id/about_wrapper"
+                  android:id="@+id/set_sub_item_sep7" />
+
+        <RelativeLayout
+	        android:id="@+id/sort_setting_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+        	android:layout_below="@+id/set_sub_item_sep7">
+		    <TextView style="@style/SetSubItem"
+		        android:text="@string/set_sort"
+		        android:id="@+id/set_sync_with" />
+		    
+		    <ImageView
+	            android:id="@+id/set_sort_set1"
+	            style="@style/SetArrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:contentDescription="@string/dummy"
+	            android:src="@drawable/right_arrow" />
+	    </RelativeLayout>
+
+        <TextView style="@style/SetSubItemSep"
+                  android:layout_below="@+id/sort_setting_wrapper"
+                  android:id="@+id/set_sub_item_sep_search_setting" />
+	    
+        
+	    <RelativeLayout
+	        android:id="@+id/search_setting_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+            android:layout_below="@+id/set_sub_item_sep_search_setting">
+	        <TextView style="@style/SetSubItem"
+	                  android:text="@string/set_search_setting"
+	                  android:id="@+id/set_search_setting" />
+	
+	        <ImageView
+	            android:id="@+id/set_search_setting_set1"
+	            style="@style/SetArrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:contentDescription="@string/dummy"
+	            android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/search_setting_wrapper"
+	        android:id="@+id/set_item_sep3" />
+	    	    
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_item_sep3"
+	        android:text="@string/set_broadcast"
+	        android:id="@+id/set_broadcast" />
+	    
+	    <!--  is show local -->
+	    <Switch style="@style/SetSwitch"
+	        android:layout_below="@+id/set_item_sep3"
+	        android:layout_toRightOf="@+id/set_broadcast"
+	        android:id="@+id/set_broadcast_switch" />
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/set_broadcast"
+	        android:id="@+id/set_sub_item_sep1" />
+	    <!--  end of show native -->
+	    	    
+	    <!-- Support -->
+	    	    
+	    <!-- 
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_item_support2"
+	        android:text="@string/set_policy"
+	        android:id="@+id/set_policy" />
+
+	    <TextView style="@style/SetArrow"
+	        android:layout_below="@+id/set_item_support2"
+	        android:layout_toRightOf="@+id/set_policy"
+	        android:text="@string/set_arrow"
+	        android:id="@+id/set_policy1" />
+	    	    
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/set_policy"
+	        android:id="@+id/set_policy_sep" />
+	    -->
+	    <!-- About Pintact -->
+	    
+	    <!-- invite a friend -->
+	    <RelativeLayout
+	        android:id="@+id/invite_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_below="@+id/set_sub_item_sep1">
+		    <TextView style="@style/SetSubItem"
+		        android:text="@string/set_invite"
+		        android:id="@+id/set_invite" />
+		    
+		    <ImageView
+	            android:id="@+id/set_invite_arrow"
+	            style="@style/SetArrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:contentDescription="@string/dummy"
+	            android:src="@drawable/right_arrow" />
+	    </RelativeLayout>
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/invite_wrapper"
+	        android:id="@+id/set_sub_item_sep2" />
+	    	    	    
+	    <!-- feed back -->
+
+		<RelativeLayout
+	        android:id="@+id/change_password_wrapper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/set_sub_item_sep2">
+	        <TextView style="@style/SetSubItem"
+	                  android:text="@string/set_change_password"
+	                  android:id="@+id/set_change_password" />
+	
+	        <ImageView
+	            android:id="@+id/set_set_change_password_set1"
+	            style="@style/SetArrow"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:contentDescription="@string/dummy"
+	            android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+
+        <TextView style="@style/SetSubItemSep"
+                  android:layout_below="@+id/change_password_wrapper"
+                  android:id="@+id/set_sub_item_sep6" />
+
+        <TextView style="@style/SetSubItem"
+                  android:layout_below="@+id/set_sub_item_sep6"
+                  android:id="@+id/set_pin_text" />
+	    
+	    <TextView
+            style="@style/ButtonStyle"
+	        android:layout_below="@+id/set_sub_item_sep6"
+	        android:onClick="logout"
+            android:background="@drawable/pintact_round_orange_rect"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/set_pad_item_left"
+            android:layout_height="wrap_content"
+	        android:padding="@dimen/set_pad_sub_item_top"
+	        android:text="@string/login_logout"
+	        android:id="@+id/set_logout" />
+	    	    	    	
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_logout"
+	        android:id="@+id/set_item_logout1" />
+	    	    
+	    
+	    	    	    
+	</RelativeLayout>
+
+</ScrollView>

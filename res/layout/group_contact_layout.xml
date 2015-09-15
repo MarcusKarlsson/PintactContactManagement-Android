@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/groupContactLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pintact_white_rect_with_1_bottom_line"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:id="@+id/groupContactImageFrame"
+        android:layout_width="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:layout_height="@dimen/PINTACT_LIST_ITEM_THUMBNAIL_SIZE"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/pintact_round_grey_rect_with_border">
+
+        <com.pinplanet.pintact.utility.CustomNetworkImageView
+            android:id="@+id/groupContactImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/silhouette"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/groupInitialTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="AR"
+            android:background="@null"
+            android:textColor="@color/PINTACT_GRAY_COLOR"
+            android:textSize="30dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/groupContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/groupContactImageFrame"
+        android:text="John Doe"
+        android:textSize="20dp"
+        android:background="@null"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/groupContactCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/groupContactImageFrame"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/groupContactImageFrame"
+        android:text="Pintact"
+        android:textStyle="italic"
+        android:background="@null"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/groupContactReject"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:padding="2.5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/PINTACT_WHITE_COLOR"
+            android:padding="5dp"
+            android:text="REJECT"
+            android:textColor="@color/PINTACT_ORANGE_COLOR" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/groupContactApprove"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/groupContactReject"
+        android:padding="2.5dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/PINTACT_WHITE_COLOR"
+            android:padding="5dp"
+            android:text="APPROVE"
+            android:textColor="@color/PINTACT_ORANGE_COLOR" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/groupContactConnect"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:padding="2.5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/PINTACT_WHITE_COLOR"
+            android:padding="5dp"
+            android:text="CONNECT"
+            android:textColor="@color/PINTACT_ORANGE_COLOR" />
+    </FrameLayout>
+
+
+</RelativeLayout>
